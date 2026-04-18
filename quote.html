@@ -5,59 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>cooperate Insurance Broker</title>
     <link rel="icon" type="image/png" sizes="80x80" href="images/cib.jpg?v=1">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 </head>
 
-<body class="font-sans bg-gray-50">
+<body class="font-sans bg-white">
 
 <!-- TOP BAR -->
-<div class="bg-[#f28b19] text-white text-sm py-3">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+<div class="bg-[#f28b19] text-white text-sm py-3 w-full">
 
-        <!-- Address -->
-        <div class="flex items-center gap-3 text-center md:text-left">
+    <div class="flex flex-col md:flex-row md:items-center px-4">
 
-            <!-- ICON WITH BACKGROUND -->
-            <span class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full">
-                
+        <!-- LEFT SIDE (UNCHANGED ON DESKTOP) -->
+        <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left">
+
+            <span class="font-bold">
+                <marquee>Secure Your Future with Confidence.</marquee>
             </span>
 
-            <span>
-               <marquee behavior="" direction="" class="font-bold"> Secure Your Future with Confidence.</marquee>
-            </span>
+            <a href="tel:+255719844888" class="flex items-center gap-2 font-semibold hover:underline">
+                Contact Us :
+                <span>+255 719 844 888</span>
+            </a>
+
         </div>
 
-        <!-- Social -->
-        <div class="flex gap-3 mt-3 md:mt-0">
+        <!-- RIGHT SIDE (UNCHANGED ON DESKTOP) -->
+        <div class="flex items-center gap-3 ml-auto mt-3 md:mt-0 justify-center md:justify-end">
 
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-twitter"></i>
+            <!-- Social Icons -->
+            <div class="flex gap-3">
+
+                <a href="https://twitter.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                <a href="https://facebook.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-facebook"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+
+                <a href="https://instagram.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+            </div>
+
+            <!-- LOGIN BUTTON (UNCHANGED DESKTOP) -->
+            <a href="https://mail.yourdomain.com"
+               class="bg-white text-gray-900 px-4 py-1.5 rounded-md text-xs md:text-sm font-semibold transition ml-3">
+                Login
             </a>
-
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-facebook"></i>
-            </a>
-
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-linkedin"></i>
-            </a>
-
-            
-
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-instagram"></i>
-            </a>
-
-            
 
         </div>
 
     </div>
 </div>
-
 <!-- NAVBAR -->
 <header class="bg-white text-gray-900 sticky top-0 z-50 shadow-md">
 
@@ -65,7 +78,7 @@
 
         <!-- LOGO -->
         <div class="flex items-center">
-            <a href="index.html" class="font-bold tracking-wide text-[#f28b19]">
+            <a href="index.html">
                 <img src="images/CIB logo.png" alt="Insurance Logo" class="h-14 w-auto">
             </a>
         </div>
@@ -81,24 +94,23 @@
 
             <ul class="flex flex-col md:flex-row gap-6 md:gap-8 p-6 md:p-0 font-medium">
 
+                <!-- HOME -->
                 <li><a href="index.html" class="hover:text-[#f28b19]">Home</a></li>
 
+                <!-- ABOUT -->
                 <li><a href="about.html" class="hover:text-[#f28b19]">About Us</a></li>
 
-                <!-- PRODUCTS DROPDOWN -->
+                <!-- PRODUCTS & SERVICES -->
                 <li class="relative">
-
                     <button onclick="toggleDropdown('productsMenu')"
                         class="flex items-center gap-2 hover:text-[#f28b19]">
-                        Our Products <i class="fa fa-chevron-down text-xs"></i>
+                        Products & Services <i class="fa fa-chevron-down text-xs"></i>
                     </button>
 
                     <ul id="productsMenu"
                         class="hidden absolute left-0 mt-4 bg-white text-black w-72 rounded shadow-lg p-4 space-y-2 z-50">
 
-                        <li class="font-bold text-[#f28b19]">Our Products & Services</li>
-                        <li class="text-xs text-gray-500 mb-2">Available insurance categories</li>
-
+                        <li class="font-bold text-[#f28b19]">Products & Services</li>
                         <hr>
 
                         <li><a href="Property-Insurance.html" class="block hover:text-[#f28b19]">Property Insurance</a></li>
@@ -109,38 +121,46 @@
                         <li><a href="Health-Insurance.html" class="block hover:text-[#f28b19]">Health Insurance</a></li>
 
                     </ul>
-
                 </li>
 
-                <li><a href="cooperate.html" class="hover:text-[#f28b19]">CSR</a></li>
-
-                <!-- MEDIA DROPDOWN (FIXED) -->
+                <!-- MEDIA GALLERY -->
                 <li class="relative">
-
                     <button onclick="toggleDropdown('mediaMenu')"
                         class="flex items-center gap-2 hover:text-[#f28b19]">
-                        Media <i class="fa fa-chevron-down text-xs"></i>
+                        Media Gallery <i class="fa fa-chevron-down text-xs"></i>
                     </button>
 
                     <ul id="mediaMenu"
                         class="hidden absolute left-0 mt-4 bg-white text-black w-64 rounded shadow-lg p-4 space-y-2 z-50">
 
-                        <li class="font-bold text-[#f28b19]">Media</li>
-                        <li class="text-xs text-gray-500 mb-2">Updates & Content</li>
-
+                        <li class="font-bold text-[#f28b19]">Media Gallery</li>
                         <hr>
 
                         <li><a href="blog.html" class="block hover:text-[#f28b19]">Blog</a></li>
                         <li><a href="gallarey.html" class="block hover:text-[#f28b19]">Gallery</a></li>
-                        <li><a href="team.html" class="block hover:text-[#f28b19]">Our Team</a></li>
+                        
 
                     </ul>
-
                 </li>
 
-                <li><a href="contact.html" class="hover:text-[#f28b19]">Contact us</a></li>
-                
-                <li><a href="quote.html" class="hover:text-[#f28b19]">Quick Quote</a></li>
+                <!-- CSR -->
+                <li><a href="cooperate.html" class="hover:text-[#f28b19]">CSR</a></li>
+
+                <!-- CONTACT WITH DROPDOWN -->
+                <li class="relative">
+                    <button onclick="toggleDropdown('contactMenu')"
+                        class="flex items-center gap-2 hover:text-[#f28b19]">
+                        Contact Us <i class="fa fa-chevron-down text-xs"></i>
+                    </button>
+
+                    <ul id="contactMenu"
+                        class="hidden absolute left-0 mt-4 bg-white text-black w-56 rounded shadow-lg p-4 space-y-2 z-50">
+
+                        <li><a href="contact.html" class="block hover:text-[#f28b19]">Contact Page</a></li>
+                        <li><a href="quote.html" class="block hover:text-[#f28b19] font-semibold">Quick Quote</a></li>
+
+                    </ul>
+                </li>
 
             </ul>
         </nav>
@@ -175,104 +195,125 @@
     });
 </script>
    <!-- HERO SECTION -->
-<!-- HERO -->
+<!-- HERO SECTION -->
 <section class="relative w-full h-[40vh] flex items-center bg-gray-900 overflow-hidden">
-    <img src="images/slider-img2.jpg" class="absolute inset-0 w-full h-full object-cover opacity-60">
-    <div class="absolute inset-0 bg-black/60"></div>
 
-    <div class="relative max-w-7xl mx-auto px-6 w-full">
-        <h1 class="text-white text-3xl md:text-5xl font-bold mb-3">
-            Get a Free Insurance Quote
-        </h1>
-        <p class="text-gray-200 text-sm md:text-lg max-w-2xl">
-            Tell us your needs and our experts will provide the best insurance solution tailored for you.
-        </p>
+    <!-- BACKGROUND IMAGE -->
+    <img src="images/slider-img2.jpg"
+         class="absolute inset-0 w-full h-full object-cover scale-110"
+         data-aos="zoom-out">
+
+    <!-- GRADIENT OVERLAY -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30"></div>
+
+    <!-- CONTENT -->
+    <div class="relative max-w-7xl mx-auto px-6 w-full z-10">
+
+        <div class="max-w-2xl" data-aos="fade-up" data-aos-delay="200">
+
+            <h1 class="text-white text-3xl md:text-5xl font-bold mb-3 leading-tight">
+                Get a Free Insurance Quote
+            </h1>
+
+            <p class="text-gray-200 text-sm md:text-lg max-w-2xl">
+                Tell us your needs and our experts will provide the best insurance solution tailored for you.
+            </p>
+
+        </div>
+
     </div>
 </section>
 
+
 <!-- QUOTE SECTION -->
-<section class="bg-gray-50 py-16">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10">
+<section class="bg-gray-50 py-20">
+
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
 
         <!-- LEFT INFO -->
-        <div class="space-y-6">
+        <div class="space-y-8" data-aos="fade-right">
 
-            <h2 class="text-3xl font-bold text-gray-800">
+            <h2 class="text-3xl font-bold text-gray-900">
                 Why Request a Quote from CIB?
             </h2>
 
             <p class="text-gray-600 leading-relaxed">
-                We provide professional insurance advice tailored to your needs. Our team ensures you get the best coverage at competitive rates.
+                We provide professional insurance advice tailored to your needs.
+                Our team ensures you get the best coverage at competitive rates.
             </p>
 
-            <div class="space-y-4">
+            <!-- BENEFITS -->
+            <div class="space-y-5">
 
-                <div class="flex gap-4 items-start">
-                    <i class="fa fa-check text-[#f28b19] mt-1"></i>
-                    <p class="text-gray-600">Access to multiple insurance providers</p>
+                <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa fa-check text-[#f28b19] mt-1 text-lg"></i>
+                    <p class="text-gray-700">Access to multiple insurance providers</p>
                 </div>
 
-                <div class="flex gap-4 items-start">
-                    <i class="fa fa-check text-[#f28b19] mt-1"></i>
-                    <p class="text-gray-600">Expert risk assessment and advice</p>
+                <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa fa-check text-[#f28b19] mt-1 text-lg"></i>
+                    <p class="text-gray-700">Expert risk assessment and advice</p>
                 </div>
 
-                <div class="flex gap-4 items-start">
-                    <i class="fa fa-check text-[#f28b19] mt-1"></i>
-                    <p class="text-gray-600">Fast response and policy processing</p>
+                <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa fa-check text-[#f28b19] mt-1 text-lg"></i>
+                    <p class="text-gray-700">Fast response and policy processing</p>
                 </div>
 
-                <div class="flex gap-4 items-start">
-                    <i class="fa fa-check text-[#f28b19] mt-1"></i>
-                    <p class="text-gray-600">Trusted by businesses and individuals across Tanzania</p>
+                <div class="flex gap-4 items-start" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fa fa-check text-[#f28b19] mt-1 text-lg"></i>
+                    <p class="text-gray-700">Trusted across Tanzania by businesses & individuals</p>
                 </div>
 
             </div>
 
-            <!-- CONTACT BOX -->
-            <div class="bg-white p-6 rounded-xl shadow">
-                <h3 class="font-bold text-lg mb-3">Need Help?</h3>
+            <!-- CONTACT CARD -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border-l-4 border-[#f28b19]"
+                 data-aos="zoom-in" data-aos-delay="300">
+
+                <h3 class="font-bold text-lg mb-2">Need Help?</h3>
                 <p class="text-gray-600 text-sm mb-2">Call our support team:</p>
-                <p class="font-semibold text-[#f28b19]">+255 719 844 888</p>
+                <p class="font-semibold text-[#f28b19] text-lg">
+                    +255 719 844 888
+                </p>
+
             </div>
 
         </div>
 
-        <!-- RIGHT FORM -->
-        <div class="bg-white p-8 rounded-2xl shadow-xl">
 
-            <h2 class="text-2xl font-bold text-gray-800 mb-6">
+        <!-- RIGHT FORM -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100"
+             data-aos="fade-left">
+
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
                 Request a Quote
             </h2>
 
             <form class="space-y-5">
 
-                <!-- NAME -->
-                <div>
+                <div data-aos="fade-up" data-aos-delay="100">
                     <label class="text-sm text-gray-600">Full Name</label>
                     <input type="text"
-                        class="w-full mt-1 border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#f28b19]">
+                        class="w-full mt-1 border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#f28b19] transition">
                 </div>
 
-                <!-- EMAIL -->
-                <div>
+                <div data-aos="fade-up" data-aos-delay="150">
                     <label class="text-sm text-gray-600">Email Address</label>
                     <input type="email"
-                        class="w-full mt-1 border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#f28b19]">
+                        class="w-full mt-1 border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#f28b19] transition">
                 </div>
 
-                <!-- PHONE -->
-                <div>
+                <div data-aos="fade-up" data-aos-delay="200">
                     <label class="text-sm text-gray-600">Phone Number</label>
                     <input type="text"
-                        class="w-full mt-1 border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#f28b19]">
+                        class="w-full mt-1 border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#f28b19] transition">
                 </div>
 
-                <!-- TYPE -->
-                <div>
+                <div data-aos="fade-up" data-aos-delay="250">
                     <label class="text-sm text-gray-600">Insurance Type</label>
                     <select
-                        class="w-full mt-1 border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#f28b19]">
+                        class="w-full mt-1 border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#f28b19] transition">
                         <option>Property Insurance</option>
                         <option>Pecuniary Insurance</option>
                         <option>Motor Insurance</option>
@@ -284,16 +325,15 @@
                     </select>
                 </div>
 
-                <!-- MESSAGE -->
-                <div>
+                <div data-aos="fade-up" data-aos-delay="300">
                     <label class="text-sm text-gray-600">Describe Your Needs</label>
                     <textarea rows="4"
-                        class="w-full mt-1 border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#f28b19]"></textarea>
+                        class="w-full mt-1 border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#f28b19] transition"></textarea>
                 </div>
 
-                <!-- BUTTON -->
                 <button type="submit"
-                    class="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-[#f28b19] transition">
+                    class="w-full bg-black text-white py-3 rounded-lg font-semibold hover:bg-[#f28b19] transition duration-300 transform hover:scale-[1.02]"
+                    data-aos="zoom-in" data-aos-delay="400">
                     Submit Request
                 </button>
 
@@ -302,132 +342,170 @@
         </div>
 
     </div>
+
 </section>
 
 
-<footer class="bg-gray-900 text-gray-300 pt-12">
+<footer class="bg-[#000000] text-gray-300 pt-14">
 
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-6">
 
         <!-- TOP SECTION -->
-        <div class="grid md:grid-cols-2 gap-10 pb-10 border-b border-gray-700">
+        <div class="grid md:grid-cols-3 gap-12 pb-12 border-b border-gray-800 text-center md:text-left">
 
-            <!-- COMPANY INFO -->
-            <div>
-                <h2 class="text-2xl font-bold text-white mb-4">
-                    Corporate Insurance<span class="text-[#f28b19]"> Brokers</span>
+            <!-- COMPANY -->
+            <div data-aos="fade-up">
+                <h2 class="text-2xl font-bold text-white mb-5 tracking-wide">
+                    CORPORATE INSURANCE <span class="text-white">BROKERS</span>
                 </h2>
 
-                <div class="space-y-3 text-sm">
+                <p class="text-sm leading-relaxed text-gray-50">
+                    We provide world-class insurance broking and risk management solutions
+                    tailored for individuals, corporates, and institutions across Tanzania.
+                </p>
+
+                <!-- SOCIAL (IMPROVED BIGGER + ANIMATION) -->
+                <div class="flex justify-center md:justify-start gap-5 mt-6">
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-facebook text-base"></i>
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-twitter text-base"></i>
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-linkedin text-base"></i>
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-instagram text-base"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- NAVIGATION (MORE PROFESSIONAL STRUCTURE) -->
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-2xl font-bold text-white mb-5">
+                    QUICK NAVIGATION
+                </h2>
+
+                <ul class="space-y-3 text-sm">
+
+                    <li>
+                        <a href="index.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="cooperate.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            CSR
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            News & Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallarey.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                           Gallery
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-2xl font-bold text-white mb-5">
+                    REACH US
+                </h2>
+
+                <div class="space-y-4 text-sm text-gray-50">
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-map-marker text-[#f28b19] mt-1"></i>
+                        <i class="fa fa-map-marker mt-1 text-white"></i>
                         2nd Floor, GOLDEN HEIGHTS, Chole Road, Masaki
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-envelope text-[#f28b19] mt-1"></i>
-                        P.o.Box 360, Dar es Salaam
-                    </p>
-
-                    <p class="flex items-start gap-3">
-                        <i class="fa fa-phone text-[#f28b19] mt-1"></i>
+                        <i class="fa fa-phone mt-1 text-white"></i>
                         +255 (22) 260 2508 / 260 2509
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-mobile text-[#f28b19] mt-1"></i>
+                        <i class="fa fa-mobile mt-1 text-white"></i>
                         +255 719 844 888
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-envelope-open text-[#f28b19] mt-1"></i>
-                        <a href="mailto:info@cib.co.tz" class="hover:text-white transition">
-                            info@cib.co.tz
-                        </a>
+                        <i class="fa fa-envelope mt-1 text-white"></i>
+                        info@cib.co.tz
                     </p>
 
                 </div>
 
-                <a href="#"
-                   class="inline-block mt-5 bg-[#f28b19] text-white px-6 py-2 rounded hover:bg-orange-600 transition">
-                    Contact Us
-                </a>
-            </div>
-
-            <!-- QUICK CONTACT / CTA -->
-            <div>
-                <h2 class="text-2xl font-bold text-white mb-4">
-                    Get In<span class="text-[#f28b19]"> Touch</span>
-                </h2>
-
-                <p class="text-sm mb-4">
-                    Reach out to us for reliable insurance solutions tailored to your needs. 
-                    Our team is ready to assist individuals, businesses, and institutions.
-                </p>
-
-                <div class="space-y-3 text-sm">
-
-                    <p class="flex items-center gap-3">
-                        <i class="fa fa-clock text-[#f28b19]"></i>
-                        Mon - Fri: 8:00 AM - 5:00 PM
-                    </p>
-
-                    <p class="flex items-center gap-3">
-                        <i class="fa fa-globe text-[#f28b19]"></i>
-                        Dar es Salaam, Tanzania
-                    </p>
-
+                <!-- MAP -->
+                <div class="mt-6 overflow-hidden rounded-lg border border-gray-800">
+                    <iframe 
+                        class="w-full h-44"
+                        src="https://www.google.com/maps?q=Masaki,Dar+es+Salaam&output=embed"
+                        loading="lazy">
+                    </iframe>
                 </div>
 
-                <a href="#"
-                   class="inline-block mt-5 border border-[#f28b19] text-[#f28b19] px-6 py-2 rounded hover:bg-[#f28b19] hover:text-white transition">
-                    Request Quote
-                </a>
             </div>
 
         </div>
 
-        <!-- NAV + SOCIAL -->
-        <div class="flex flex-col md:flex-row justify-between items-center py-6 gap-6">
+        <!-- BOTTOM -->
+        <div class="flex flex-col md:flex-row justify-between items-center py-6 gap-4 text-center">
 
-            <!-- NAV -->
-            <ul class="flex flex-wrap gap-6 text-sm">
-                <li><a href="#" class="hover:text-white transition">Home</a></li>
-                <li><a href="#" class="hover:text-white transition">About Us</a></li>
-                <li><a href="#" class="hover:text-white transition">Services</a></li>
-                <li><a href="#" class="hover:text-white transition">Products</a></li>
-                <li><a href="#" class="hover:text-white transition">Contact</a></li>
-            </ul>
-
-            <!-- SOCIAL -->
-            <div class="flex gap-4 text-lg">
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-linkedin"></i></a>
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-instagram"></i></a>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- COPYRIGHT -->
-    <div class="bg-gray-800 text-gray-400 text-sm py-4">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-
-            <p>
+            <p class="text-xs text-gray-50">
                 © 2026 Corporate Insurance Brokers Ltd. All Rights Reserved.
             </p>
 
-            <div class="flex gap-6">
-                <a href="#" class="hover:text-white">Terms & Conditions</a>
-                <a href="#" class="hover:text-white">Privacy Policy</a>
+            <div class="flex gap-6 text-xs">
+                <a href="#" class="hover:text-white transition">Terms</a>
+                <a href="#" class="hover:text-white transition">Privacy</a>
             </div>
 
         </div>
+
     </div>
 
 </footer>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

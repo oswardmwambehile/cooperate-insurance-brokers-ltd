@@ -12,53 +12,65 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 </head>
 
-<body class="font-sans bg-gray-50">
+<body class="font-sans bg-white">
 
 <!-- TOP BAR -->
-<div class="bg-[#f28b19] text-white text-sm py-3">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+<div class="bg-[#f28b19] text-white text-sm py-3 w-full">
 
-        <!-- Address -->
-        <div class="flex items-center gap-3 text-center md:text-left">
+    <div class="flex flex-col md:flex-row md:items-center px-4">
 
-            <!-- ICON WITH BACKGROUND -->
-            <span class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full">
-                
+        <!-- LEFT SIDE (UNCHANGED ON DESKTOP) -->
+        <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left">
+
+            <span class="font-bold">
+                <marquee>Secure Your Future with Confidence.</marquee>
             </span>
 
-            <span>
-               <marquee behavior="" direction="" class="font-bold"> Secure Your Future with Confidence.</marquee>
-            </span>
+            <a href="tel:+255719844888" class="flex items-center gap-2 font-semibold hover:underline">
+                Contact Us :
+                <span>+255 719 844 888</span>
+            </a>
+
         </div>
 
-        <!-- Social -->
-        <div class="flex gap-3 mt-3 md:mt-0">
+        <!-- RIGHT SIDE (UNCHANGED ON DESKTOP) -->
+        <div class="flex items-center gap-3 ml-auto mt-3 md:mt-0 justify-center md:justify-end">
 
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-twitter"></i>
+            <!-- Social Icons -->
+            <div class="flex gap-3">
+
+                <a href="https://twitter.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                <a href="https://facebook.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-facebook"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+
+                <a href="https://instagram.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+            </div>
+
+            <!-- LOGIN BUTTON (UNCHANGED DESKTOP) -->
+            <a href="https://mail.yourdomain.com"
+               class="bg-white text-gray-900 px-4 py-1.5 rounded-md text-xs md:text-sm font-semibold transition ml-3">
+                Login
             </a>
-
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-facebook"></i>
-            </a>
-
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-linkedin"></i>
-            </a>
-
-            
-
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-instagram"></i>
-            </a>
-
-            
 
         </div>
 
     </div>
 </div>
-
 <!-- NAVBAR -->
 <header class="bg-white text-gray-900 sticky top-0 z-50 shadow-md">
 
@@ -66,7 +78,7 @@
 
         <!-- LOGO -->
         <div class="flex items-center">
-            <a href="index.html" class="font-bold tracking-wide text-[#f28b19]">
+            <a href="index.html">
                 <img src="images/CIB logo.png" alt="Insurance Logo" class="h-14 w-auto">
             </a>
         </div>
@@ -82,24 +94,23 @@
 
             <ul class="flex flex-col md:flex-row gap-6 md:gap-8 p-6 md:p-0 font-medium">
 
+                <!-- HOME -->
                 <li><a href="index.html" class="hover:text-[#f28b19]">Home</a></li>
 
+                <!-- ABOUT -->
                 <li><a href="about.html" class="hover:text-[#f28b19]">About Us</a></li>
 
-                <!-- PRODUCTS DROPDOWN -->
+                <!-- PRODUCTS & SERVICES -->
                 <li class="relative">
-
                     <button onclick="toggleDropdown('productsMenu')"
                         class="flex items-center gap-2 hover:text-[#f28b19]">
-                        Our Products <i class="fa fa-chevron-down text-xs"></i>
+                        Products & Services <i class="fa fa-chevron-down text-xs"></i>
                     </button>
 
                     <ul id="productsMenu"
                         class="hidden absolute left-0 mt-4 bg-white text-black w-72 rounded shadow-lg p-4 space-y-2 z-50">
 
-                        <li class="font-bold text-[#f28b19]">Our Products & Services</li>
-                        <li class="text-xs text-gray-500 mb-2">Available insurance categories</li>
-
+                        <li class="font-bold text-[#f28b19]">Products & Services</li>
                         <hr>
 
                         <li><a href="Property-Insurance.html" class="block hover:text-[#f28b19]">Property Insurance</a></li>
@@ -110,38 +121,46 @@
                         <li><a href="Health-Insurance.html" class="block hover:text-[#f28b19]">Health Insurance</a></li>
 
                     </ul>
-
                 </li>
 
-                <li><a href="cooperate.html" class="hover:text-[#f28b19]">CSR</a></li>
-
-                <!-- MEDIA DROPDOWN (FIXED) -->
+                <!-- MEDIA GALLERY -->
                 <li class="relative">
-
                     <button onclick="toggleDropdown('mediaMenu')"
                         class="flex items-center gap-2 hover:text-[#f28b19]">
-                        Media <i class="fa fa-chevron-down text-xs"></i>
+                        Media Gallery <i class="fa fa-chevron-down text-xs"></i>
                     </button>
 
                     <ul id="mediaMenu"
                         class="hidden absolute left-0 mt-4 bg-white text-black w-64 rounded shadow-lg p-4 space-y-2 z-50">
 
-                        <li class="font-bold text-[#f28b19]">Media</li>
-                        <li class="text-xs text-gray-500 mb-2">Updates & Content</li>
-
+                        <li class="font-bold text-[#f28b19]">Media Gallery</li>
                         <hr>
 
                         <li><a href="blog.html" class="block hover:text-[#f28b19]">Blog</a></li>
                         <li><a href="gallarey.html" class="block hover:text-[#f28b19]">Gallery</a></li>
-                        <li><a href="team.html" class="block hover:text-[#f28b19]">Our Team</a></li>
+                        
 
                     </ul>
-
                 </li>
 
-                <li><a href="contact.html" class="hover:text-[#f28b19]">Contact us</a></li>
-                
-                <li><a href="quote.html" class="hover:text-[#f28b19]">Quick Quote</a></li>
+                <!-- CSR -->
+                <li><a href="cooperate.html" class="hover:text-[#f28b19]">CSR</a></li>
+
+                <!-- CONTACT WITH DROPDOWN -->
+                <li class="relative">
+                    <button onclick="toggleDropdown('contactMenu')"
+                        class="flex items-center gap-2 hover:text-[#f28b19]">
+                        Contact Us <i class="fa fa-chevron-down text-xs"></i>
+                    </button>
+
+                    <ul id="contactMenu"
+                        class="hidden absolute left-0 mt-4 bg-white text-black w-56 rounded shadow-lg p-4 space-y-2 z-50">
+
+                        <li><a href="contact.html" class="block hover:text-[#f28b19]">Contact Page</a></li>
+                        <li><a href="quote.html" class="block hover:text-[#f28b19] font-semibold">Quick Quote</a></li>
+
+                    </ul>
+                </li>
 
             </ul>
         </nav>
@@ -175,23 +194,21 @@
         }
     });
 </script>
- 
 <section class="relative overflow-hidden">
 
     <!-- SLIDER -->
     <div id="slider" class="flex transition-transform duration-700 ease-in-out">
 
-        <!-- SLIDE 1 -->
+        <!-- ================= SLIDE 1 ================= -->
         <div class="min-w-full">
 
-            <!-- IMAGE -->
             <div class="relative">
                 <img src="images/proprty.jpg"
                      class="w-full h-auto md:h-[75vh] object-contain md:object-cover bg-black" />
 
-                <!-- DESKTOP OVERLAY ONLY -->
                 <div class="hidden md:block absolute inset-0 bg-black/50"></div>
 
+                <!-- DESKTOP CONTENT -->
                 <div class="hidden md:flex absolute inset-0 items-center">
                     <div class="text-white px-16 max-w-2xl">
 
@@ -200,38 +217,50 @@
                         </h3>
 
                         <p class="text-lg text-gray-200">
-                           Fire & Special Perils
-• All Risks Insurance
-• Theft Insurance
-• Engineering Breakdown
-• Business Interruption
+                            Fire & Special Perils
+                            All Risks Insurance
+                            Theft Insurance
+                            Engineering Breakdown
+                            Business Interruption
                         </p>
+
+                        <a href="Property-Insurance.html"
+                           class="inline-block mt-6 bg-[#f28b19] text-white font-extrabold px-6 py-3 text-sm rounded-full shadow-md hover:bg-orange-600 transition">
+                            Explore Coverage
+                        </a>
 
                     </div>
                 </div>
             </div>
 
-            <!-- MOBILE TEXT (SEPARATE SECTION) -->
-            <div class="md:hidden bg-gray-50 text-gray-900 p-5 text-center">
-                <h3 class="text-lg font-semibold mb-2">
+            <!-- MOBILE CONTENT -->
+            <div class="md:hidden bg-gray-50 text-gray-900 p-5 text-center space-y-3">
+
+                <h3 class="text-lg font-semibold">
                     Property Insurance
                 </h3>
+
                 <p class="text-sm text-gray-900">
-                   Fire & Special Perils All Risks Insurance Theft Insurance
-Engineering Breakdown
-• Business Interruption
+                    Fire & Special Perils, All Risks Insurance, Theft Insurance,
+                    Engineering Breakdown, Business Interruption
+                </p>
+
+                <a href="Property-Insurance.html"
+                   class="inline-block bg-[#f28b19] text-white font-extrabold px-6 py-3 text-sm rounded-full shadow-md active:scale-95 transition">
+                    Explore Coverage
+                </a>
+
             </div>
 
         </div>
-        <!-- SLIDE 1 -->
+
+        <!-- ================= SLIDE 2 ================= -->
         <div class="min-w-full">
 
-            <!-- IMAGE -->
             <div class="relative">
                 <img src="images/motor.jpg"
                      class="w-full h-auto md:h-[75vh] object-contain md:object-cover bg-black" />
 
-                <!-- DESKTOP OVERLAY ONLY -->
                 <div class="hidden md:block absolute inset-0 bg-black/50"></div>
 
                 <div class="hidden md:flex absolute inset-0 items-center">
@@ -242,26 +271,38 @@ Engineering Breakdown
                         </h3>
 
                         <p class="text-lg text-gray-200">
-                            Private Motor Insurance, Motor Cycle Insurance, Commercial Motor Insurance and Motor Trade Insurance
+                            Private Motor Insurance, Motor Cycle Insurance,
+                            Commercial Motor Insurance and Motor Trade Insurance
                         </p>
+
+                        <a href="Motor-Insurance.html"
+                           class="inline-block mt-6 bg-[#f28b19] text-white font-extrabold px-6 py-3 text-sm rounded-full shadow-md hover:bg-orange-600 transition">
+                            Explore Coverage
+                        </a>
 
                     </div>
                 </div>
             </div>
 
-            <!-- MOBILE TEXT (SEPARATE SECTION) -->
-            <div class="md:hidden bg-gray-50 text-gray-900 p-5 text-center">
-                <h3 class="text-lg font-semibold mb-2">
-                    Motor Insurance
-                </h3>
+            <div class="md:hidden bg-gray-50 text-gray-900 p-5 text-center space-y-3">
+
+                <h3 class="text-lg font-semibold">Motor Insurance</h3>
+
                 <p class="text-sm text-gray-900">
-                    Private Motor Insurance, Motor Cycle Insurance, Commercial Motor Insurance and Motor Trade Insurance
+                    Private Motor Insurance, Motor Cycle Insurance,
+                    Commercial Motor Insurance and Motor Trade Insurance
                 </p>
+
+                <a href="Motor-Insurance.html"
+                   class="inline-block bg-[#f28b19] text-white font-extrabold px-6 py-3 text-sm rounded-full shadow-md active:scale-95 transition">
+                    Explore Coverage
+                </a>
+
             </div>
 
         </div>
 
-        <!-- SLIDE 2 -->
+        <!-- ================= SLIDE 3 ================= -->
         <div class="min-w-full">
 
             <div class="relative">
@@ -278,25 +319,38 @@ Engineering Breakdown
                         </h3>
 
                         <p class="text-lg text-gray-200">
-                            Workman Compensation, Public Liability Insurance, Products Liability Insurance and Professional Indemnity Insurance
+                            Workman Compensation, Public Liability Insurance,
+                            Products Liability Insurance and Professional Indemnity Insurance
                         </p>
+
+                        <a href="Marine-Aviation.html"
+                           class="inline-block mt-6 bg-[#f28b19] text-white font-extrabold px-6 py-3 text-sm rounded-full shadow-md hover:bg-orange-600 transition">
+                            Explore Coverage
+                        </a>
 
                     </div>
                 </div>
             </div>
 
-            <div class="md:hidden bg-gray-50 text-gray-900 p-5 text-center">
-                <h3 class="text-lg font-semibold mb-2">
-                    Marine-Aviation Insurance
-                </h3>
+            <div class="md:hidden bg-gray-50 text-gray-900 p-5 text-center space-y-3">
+
+                <h3 class="text-lg font-semibold">Marine-Aviation Insurance</h3>
+
                 <p class="text-sm text-gray-900">
-                    Workman Compensation, Public Liability Insurance, Products Liability Insurance and Professional Indemnity Insurance
+                    Workman Compensation, Public Liability Insurance,
+                    Products Liability Insurance and Professional Indemnity Insurance
                 </p>
+
+                <a href="Marine-Aviation.html"
+                   class="inline-block bg-[#f28b19] text-white font-extrabold px-6 py-3 text-sm rounded-full shadow-md active:scale-95 transition">
+                    Explore Coverage
+                </a>
+
             </div>
 
         </div>
 
-        <!-- SLIDE 3 -->
+        <!-- ================= SLIDE 4 ================= -->
         <div class="min-w-full">
 
             <div class="relative">
@@ -313,25 +367,38 @@ Engineering Breakdown
                         </h3>
 
                         <p class="text-lg text-gray-200">
-                            Personal Accident Insurance, Medical Expenses Insurance and Group Life Insurance
+                            Personal Accident Insurance, Medical Expenses Insurance
+                            and Group Life Insurance
                         </p>
+
+                        <a href="Health-Insurance.html"
+                           class="inline-block mt-6 bg-[#f28b19] text-white font-extrabold px-6 py-3 text-sm rounded-full shadow-md hover:bg-orange-600 transition">
+                            Explore Coverage
+                        </a>
 
                     </div>
                 </div>
             </div>
 
-            <div class="md:hidden bg-gray-50 text-gray-900 p-5 text-center">
-                <h3 class="text-lg font-semibold mb-2">
-                    Health Insurance
-                </h3>
+            <div class="md:hidden bg-gray-50 text-gray-900 p-5 text-center space-y-3">
+
+                <h3 class="text-lg font-semibold">Health Insurance</h3>
+
                 <p class="text-sm text-gray-900">
-                    Personal Accident Insurance, Medical Expenses Insurance and Group Life Insurance
+                    Personal Accident Insurance, Medical Expenses Insurance
+                    and Group Life Insurance
                 </p>
+
+                <a href="Health-Insurance.html"
+                   class="inline-block bg-[#f28b19] text-white font-extrabold px-6 py-3 text-sm rounded-full shadow-md active:scale-95 transition">
+                    Explore Coverage
+                </a>
+
             </div>
 
         </div>
 
-        <!-- SLIDE 4 -->
+        <!-- ================= SLIDE 5 ================= -->
         <div class="min-w-full">
 
             <div class="relative">
@@ -348,24 +415,33 @@ Engineering Breakdown
                         </h3>
 
                         <p class="text-lg text-gray-200">
-                           Financial Loss Protection
-• Liability Covers
-• Fraud Protection
+                            Financial Loss Protection
+                            Liability Covers
+                            Fraud Protection
                         </p>
+
+                        <a href="Pecuniary-Insurance.html"
+                           class="inline-block mt-6 bg-[#f28b19] text-white font-extrabold px-6 py-3 text-sm rounded-full shadow-md hover:bg-orange-600 transition">
+                            Explore Coverage
+                        </a>
 
                     </div>
                 </div>
             </div>
 
-            <div class="md:hidden bg-gray-50 text-gray-900 p-5 text-center">
-                <h3 class="text-lg font-semibold mb-2">
-                    Pecuniary Insurance
-                </h3>
+            <div class="md:hidden bg-gray-50 text-gray-900 p-5 text-center space-y-3">
+
+                <h3 class="text-lg font-semibold">Pecuniary Insurance</h3>
+
                 <p class="text-sm text-gray-900">
-                    Financial Loss Protection
-• Liability Covers
-• Fraud Protection
+                    Financial Loss Protection, Liability Covers, Fraud Protection
                 </p>
+
+                <a href="Pecuniary-Insurance.html"
+                   class="inline-block bg-[#f28b19] text-white font-extrabold px-6 py-3 text-sm rounded-full shadow-md active:scale-95 transition">
+                    Explore Coverage
+                </a>
+
             </div>
 
         </div>
@@ -373,12 +449,12 @@ Engineering Breakdown
     </div>
 
     <!-- ARROWS -->
-    <button onclick="prevSlide()" class="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 text-white px-4 py-2 rounded-lg">
-        
+    <button onclick="prevSlide()"
+        class="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 text-white px-4 py-2 rounded-lg">
     </button>
 
-    <button onclick="nextSlide()" class="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 text-white px-4 py-2 rounded-lg">
-       
+    <button onclick="nextSlide()"
+        class="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 text-white px-4 py-2 rounded-lg">
     </button>
 
 </section>
@@ -406,80 +482,88 @@ Engineering Breakdown
     }, 5000);
 </script>
 
-<section class="relative py-16 bg-gray-50">
+<section class="relative py-5 md:py-7 bg-gradient-to-b from-white to-gray-50">
 
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-6">
 
-        <div class="flex flex-col lg:flex-row gap-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
             <!-- LEFT CONTENT -->
-            <div class="w-full lg:w-1/2"  data-aos="fade-right"
-  data-aos-duration="1200"
-  data-aos-delay="100"
-  data-aos-easing="ease-in-out">
+            <div data-aos="fade-up"
+                 data-aos-duration="1200"
+                 class="space-y-7">
 
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-                    Welcome to Corporate Insurance Broker Ltd
+                <span class="text-[#f28b19] font-semibold tracking-widest uppercase text-lg">
+                    Corporate Insurance Broker Ltd
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight">
+                    Trusted Insurance Partner for Businesses & Individuals in Tanzania
                 </h2>
 
-                <p class="text-gray-600 leading-relaxed mb-8">
+                <p class="text-gray-700 leading-relaxed text-base md:text-lg">
                     Corporate Insurance Brokers Ltd is a privately owned company registered in Tanzania.
-                    It was incorporated under the Companies Ordinance (Cap 212) in 1978 under the name of Consultancy Services Limited and changed name in 1997.
-                    <br><br>
-                    <strong>OUR VISION:</strong>
-                    To be a Preferred broking house in Tanzania.
+                    It was incorporated under the Companies Ordinance (Cap 212) in 1978 under the name
+                    Consultancy Services Limited and later changed its name in 1997.
                 </p>
+
+                <div class="border-l-4 border-black pl-5">
+                    <p class="text-gray-800 text-lg">
+                        <span class="font-bold text-gray-900">OUR VISION:</span>
+                        To be a preferred broking house in Tanzania delivering trust, protection, and value.
+                    </p>
+                </div>
+
+                <a href="about.html"
+                   class="inline-block mt-6 bg-black text-white px-7 py-3 rounded-md font-semibold shadow-md hover:bg-gray-800 hover:shadow-lg transition">
+                    Learn More About Us
+                </a>
 
             </div>
 
             <!-- RIGHT SERVICES -->
-            <div class="w-full lg:w-1/2"  data-aos="fade-left"
-  data-aos-duration="1200"
-  data-aos-delay="100"
-  data-aos-easing="ease-in-out">
+            <div data-aos="fade-up"
+                 data-aos-duration="1200"
+                 class="space-y-6">
 
-                <div class="space-y-6">
+                <!-- CARD -->
+                <div class="flex items-start gap-5 bg-white p-7 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300">
 
-                    <!-- CARD 1 -->
-                    <div class="flex items-start gap-4 bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                    <i class="fa fa-life-ring text-[#f28b19] text-2xl mt-1"></i>
 
-                        <i class="fa fa-life-ring text-[#f28b19] text-4xl"></i>
-
-                        <div>
-                            <h6 class="font-bold text-gray-800 mb-1">MARINE & AVIATION</h6>
-                            <p class="text-sm text-gray-600">
-                                Hull Insurance, Cargo Insurance and Aviation Insurance
-                            </p>
-                        </div>
-
+                    <div>
+                        <h6 class="font-bold text-gray-900 text-lg mb-1">MARINE & AVIATION</h6>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Hull Insurance, Cargo Insurance and Aviation Insurance for global protection.
+                        </p>
                     </div>
 
-                    <!-- CARD 2 -->
-                    <div class="flex items-start gap-4 bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                </div>
 
-                        <i class="fa fa-heartbeat text-[#f28b19] text-4xl"></i>
+                <!-- CARD -->
+                <div class="flex items-start gap-5 bg-white p-7 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300">
 
-                        <div>
-                            <h6 class="font-bold text-gray-800 mb-1">HEALTH INSURANCE</h6>
-                            <p class="text-sm text-gray-600">
-                                Personal Accident Insurance and Medical Expenses Insurance
-                            </p>
-                        </div>
+                    <i class="fa fa-heartbeat text-[#f28b19] text-2xl mt-1"></i>
 
+                    <div>
+                        <h6 class="font-bold text-gray-900 text-lg mb-1">HEALTH INSURANCE</h6>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Personal Accident Insurance and Medical Expenses Insurance coverage.
+                        </p>
                     </div>
 
-                    <!-- CARD 3 -->
-                    <div class="flex items-start gap-4 bg-white border border-gray-200 p-6 rounded-lg shadow-sm">
+                </div>
 
-                        <i class="fa fa-briefcase text-[#f28b19] text-4xl"></i>
+                <!-- CARD -->
+                <div class="flex items-start gap-5 bg-white p-7 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300">
 
-                        <div>
-                            <h6 class="font-bold text-gray-800 mb-1">PACKAGE POLICIES</h6>
-                            <p class="text-sm text-gray-600">
-                                Household Insurance, Travel Insurance and Trader’s Combine Insurance
-                            </p>
-                        </div>
+                    <i class="fa fa-briefcase text-[#f28b19] text-2xl mt-1"></i>
 
+                    <div>
+                        <h6 class="font-bold text-gray-900 text-lg mb-1">PACKAGE POLICIES</h6>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Household Insurance, Travel Insurance and Trader’s Combine Insurance solutions.
+                        </p>
                     </div>
 
                 </div>
@@ -491,199 +575,183 @@ Engineering Breakdown
     </div>
 
 </section>
+<section class="py-5 py-7 bg-gradient-to-b from-white to-gray-50">
 
-<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
 
-    <div class="max-w-7xl mx-auto px-4">
+        <!-- HEADER -->
+        <div class="text-center mb-16 space-y-4" data-aos="fade-up">
 
-        <div class="flex flex-col md:flex-row justify-between items-start gap-6 mb-12">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
+                Our Tailored Products & Services
+            </h2>
 
-    <!-- LEFT -->
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 md:w-1/2">
-        Our Tailored Products & Services
-    </h2>
+            <p class="text-gray-900 max-w-3xl mx-auto text-base md:text-lg leading-relaxed">
+                We deliver world-class insurance solutions designed to protect businesses, individuals, and assets with trust, strength, and global expertise.
+            </p>
 
-    <!-- RIGHT -->
-    <p class="text-gray-700 font-bold md:w-1/2 md:text-right leading-relaxed">
-        We offer a full range of personalized and tailored Insurance service including:
-    </p>
-
-</div>
+        </div>
 
         <!-- GRID -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
             <!-- CARD -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full group" >
+            <a href="#" data-aos="fade-up"
+               class="group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-2xl transition duration-500">
 
-                <!-- IMAGE FIXED -->
-                <div class="h-52 w-full bg-gray-100 overflow-hidden">
+                <!-- IMAGE -->
+                <div class="h-56 overflow-hidden">
                     <img src="images/proprty.jpg"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                 </div>
 
                 <!-- CONTENT -->
-                <div class="p-6 flex flex-col flex-1">
+                <div class="p-7 space-y-3">
 
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 flex items-center justify-center bg-orange-100 text-[#f28b19] rounded-full text-xl">
-                            <i class="fa fa-home"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-800">
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-home text-[#f28b19] text-2xl group-hover:scale-110 transition"></i>
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#f28b19] transition">
                             Property Insurance
                         </h3>
                     </div>
 
-                    <ul class="text-gray-600 text-sm space-y-2 flex-1">
-                        <li>• Fire & Special Perils</li>
-                        <li>• All Risks Insurance</li>
-                        <li>• Theft Insurance</li>
-                        <li>• Engineering Breakdown</li>
-                        <li>• Business Interruption</li>
-                    </ul>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Comprehensive protection for buildings and assets against fire, theft, accidental damage, and business interruption risks.
+                    </p>
 
                 </div>
-            </div>
 
-            <!-- CARD 2 -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full group">
+            </a>
 
-                <div class="h-52 w-full bg-gray-100 overflow-hidden">
+            <!-- CARD -->
+            <a href="#" data-aos="fade-up" data-aos-delay="100"
+               class="group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-2xl transition duration-500">
+
+                <div class="h-56 overflow-hidden">
                     <img src="images/precunary.jpg"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                 </div>
 
-                <div class="p-6 flex flex-col flex-1">
+                <div class="p-7 space-y-3">
 
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 flex items-center justify-center bg-orange-100 text-[#f28b19] rounded-full text-xl">
-                            <i class="fa fa-plane"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-800">
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-balance-scale text-[#f28b19] text-2xl group-hover:scale-110 transition"></i>
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#f28b19] transition">
                             Pecuniary Insurance
                         </h3>
                     </div>
 
-                    <ul class="text-gray-600 text-sm space-y-2 flex-1">
-                        <li>• Financial Loss Protection</li>
-                        <li>• Liability Covers</li>
-                        <li>• Fraud Protection</li>
-                    </ul>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Protection against financial loss, liability exposure, fraud risks, and professional indemnity challenges.
+                    </p>
 
                 </div>
-            </div>
 
-            <!-- CARD 3 -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full group">
+            </a>
 
-                <div class="h-52 w-full bg-gray-100 overflow-hidden">
+            <!-- CARD -->
+            <a href="#" data-aos="fade-up" data-aos-delay="200"
+               class="group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-2xl transition duration-500">
+
+                <div class="h-56 overflow-hidden">
                     <img src="images/motor.jpg"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                 </div>
 
-                <div class="p-6 flex flex-col flex-1">
+                <div class="p-7 space-y-3">
 
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 flex items-center justify-center bg-orange-100 text-[#f28b19] rounded-full text-xl">
-                            <i class="fa fa-car"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-800">
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-car text-[#f28b19] text-2xl group-hover:scale-110 transition"></i>
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#f28b19] transition">
                             Motor Insurance
                         </h3>
                     </div>
 
-                    <ul class="text-gray-600 text-sm space-y-2 flex-1">
-                        <li>• Private Motor Insurance</li>
-                        <li>• Commercial Vehicles</li>
-                        <li>• Motorcycle Insurance</li>
-                        <li>• Motor Trade Insurance</li>
-                    </ul>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Covers private and commercial vehicles including motorcycles, fleets, and motor trade risks.
+                    </p>
 
                 </div>
-            </div>
 
-            <!-- CARD 4 -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full group">
+            </a>
 
-                <div class="h-52 w-full bg-gray-100 overflow-hidden">
+            <!-- CARD -->
+            <a href="#" data-aos="fade-up"
+               class="group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-2xl transition duration-500">
+
+                <div class="h-56 overflow-hidden">
                     <img src="images/marine (2).jpg"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                 </div>
 
-                <div class="p-6 flex flex-col flex-1">
+                <div class="p-7 space-y-3">
 
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 flex items-center justify-center bg-orange-100 text-[#f28b19] rounded-full text-xl">
-                            <i class="fa fa-ship"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-800">
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-ship text-[#f28b19] text-2xl group-hover:scale-110 transition"></i>
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#f28b19] transition">
                             Marine Insurance
                         </h3>
                     </div>
 
-                    <ul class="text-gray-600 text-sm space-y-2 flex-1">
-                        <li>• Cargo Insurance</li>
-                        <li>• Hull Insurance</li>
-                        <li>• Aviation Insurance</li>
-                    </ul>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Protection for cargo, ships, aviation risks, and global transportation operations.
+                    </p>
 
                 </div>
-            </div>
 
-            <!-- CARD 5 -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full group">
+            </a>
 
-                <div class="h-52 w-full bg-gray-100 overflow-hidden">
+            <!-- CARD -->
+            <a href="#" data-aos="fade-up" data-aos-delay="100"
+               class="group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-2xl transition duration-500">
+
+                <div class="h-56 overflow-hidden">
                     <img src="images/slider-img.jpg"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                 </div>
 
-                <div class="p-6 flex flex-col flex-1">
+                <div class="p-7 space-y-3">
 
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 flex items-center justify-center bg-orange-100 text-[#f28b19] rounded-full text-xl">
-                            <i class="fa fa-briefcase"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-800">
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-briefcase text-[#f28b19] text-2xl group-hover:scale-110 transition"></i>
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#f28b19] transition">
                             Package Policies
                         </h3>
                     </div>
 
-                    <ul class="text-gray-600 text-sm space-y-2 flex-1">
-                        <li>• Household Insurance</li>
-                        <li>• Travel Insurance</li>
-                        <li>• Traders Combine Insurance</li>
-                    </ul>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Combined insurance solutions for households, travel, and business protection packages.
+                    </p>
 
                 </div>
-            </div>
 
-            <!-- CARD 6 -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-300 flex flex-col h-full group">
+            </a>
 
-                <div class="h-52 w-full bg-gray-100 overflow-hidden">
+            <!-- CARD -->
+            <a href="#" data-aos="fade-up" data-aos-delay="200"
+               class="group relative overflow-hidden rounded-2xl bg-white shadow-md hover:shadow-2xl transition duration-500">
+
+                <div class="h-56 overflow-hidden">
                     <img src="images/heath.jpg"
-                        class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500">
+                         class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                 </div>
 
-                <div class="p-6 flex flex-col flex-1">
+                <div class="p-7 space-y-3">
 
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 flex items-center justify-center bg-orange-100 text-[#f28b19] rounded-full text-xl">
-                            <i class="fa fa-heartbeat"></i>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-800">
+                    <div class="flex items-center gap-3">
+                        <i class="fa fa-heartbeat text-[#f28b19] text-2xl group-hover:scale-110 transition"></i>
+                        <h3 class="text-xl font-bold text-gray-900 group-hover:text-[#f28b19] transition">
                             Health Insurance
                         </h3>
                     </div>
 
-                    <ul class="text-gray-600 text-sm space-y-2 flex-1">
-                        <li>• Medical Expenses Insurance</li>
-                        <li>• Personal Accident Insurance</li>
-                    </ul>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Medical, accident, and life protection plans for individuals, families, and organizations.
+                    </p>
 
                 </div>
-            </div>
+
+            </a>
 
         </div>
 
@@ -692,56 +760,94 @@ Engineering Breakdown
 </section>
 
 
-<section class="py-16 bg-gray-50">
+<section class="py-5 py-7 bg-white relative overflow-hidden">
 
-    <div class="max-w-7xl mx-auto px-4">
+    <!-- soft luxury background -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(242,139,25,0.08),transparent_40%)]"></div>
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(0,0,0,0.03),transparent_50%)]"></div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
 
-            <!-- LEFT: IMAGE -->
-            <div class="rounded-xl overflow-hidden shadow-lg">
-                <img src="images/slider-img2.jpg"
-                    class="w-full h-full object-cover">
+        <!-- SECTION HEADER -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            
+
+            <h2 class="mt-3 text-3xl md:text-3xl font-extrabold text-gray-900 leading-tight">
+                Built on Trust. Driven by Protection.
+            </h2>
+
+            <p class="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
+                We are a modern insurance brokerage delivering global-standard protection solutions
+                for businesses, institutions, and individuals in Tanzania.
+            </p>
+        </div>
+
+        <!-- MAIN GRID -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 items-stretch shadow-2xl rounded-3xl overflow-hidden">
+
+            <!-- IMAGE SIDE -->
+            <div data-aos="zoom-in" data-aos-duration="1200" class="relative h-full">
+
+                <img src="images/proprty.jpg"
+                     class="w-full h-full object-cover min-h-[350px] lg:min-h-[500px]">
+
+                <!-- overlay premium -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+
+                <!-- floating text -->
+                <div class="absolute bottom-10 left-10 text-white max-w-sm">
+                    <h3 class="text-2xl font-bold">Global Standard Protection</h3>
+                    <p class="text-sm text-white/80 mt-2">
+                        Delivering trusted insurance solutions with international expertise.
+                    </p>
+                </div>
+
             </div>
 
-            <!-- RIGHT: WHY CHOOSE US -->
-            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg border-l-4 border-[#f28b19]">
+            <!-- CONTENT SIDE -->
+            <div data-aos="fade-left" data-aos-duration="1200"
+                 class="bg-white p-10 md:p-14 flex flex-col justify-center">
 
-                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">
-                    Why Choose Us?
-                </h2>
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900">
+                    Why Leading Clients Trust Us
+                </h3>
 
-                <p class="text-gray-600 mb-4">
-                    With over <strong class="text-gray-900">25 years of experience</strong>,
-                    we deliver trusted and reliable insurance solutions across Tanzania.
+                <p class="mt-5 text-gray-600 leading-relaxed">
+                    With over <strong class="text-gray-900">25+ years of experience</strong>,
+                    we combine deep market knowledge with global insurance standards to protect what matters most.
                 </p>
 
-                <p class="text-gray-600 mb-6">
-                    We serve <strong class="text-gray-900">
-                    companies, institutions, embassies, corporate bodies, and individuals
-                    </strong> with professional care and strong commitment.
+                <p class="mt-4 text-gray-600 leading-relaxed">
+                    We serve corporates, embassies, NGOs, and individuals with tailored risk solutions
+                    designed for long-term security.
                 </p>
 
-                <!-- FEATURES -->
-                <div class="flex flex-wrap gap-3">
+                <!-- HIGHLIGHTS -->
+                <div class="mt-10 grid grid-cols-2 gap-4">
 
-                    <span class="bg-orange-100 text-[#f28b19] px-4 py-2 rounded-full text-sm font-semibold">
-                        25+ Years Experience
-                    </span>
+                    <div data-aos="fade-up" data-aos-delay="100" class="border-l-2 border-[#f28b19] pl-4">
+                        <h4 class="font-bold text-gray-900">25+ Years</h4>
+                        <p class="text-sm text-gray-600">Industry Experience</p>
+                    </div>
 
-                    <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">
-                        Trusted Clients
-                    </span>
+                    <div data-aos="fade-up" data-aos-delay="200" class="border-l-2 border-[#f28b19] pl-4">
+                        <h4 class="font-bold text-gray-900">Global Standard</h4>
+                        <p class="text-sm text-gray-600">Insurance Practice</p>
+                    </div>
 
-                    <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">
-                        Professional Team
-                    </span>
+                    <div data-aos="fade-up" data-aos-delay="300" class="border-l-2 border-[#f28b19] pl-4">
+                        <h4 class="font-bold text-gray-900">Fast Claims</h4>
+                        <p class="text-sm text-gray-600">Reliable Support</p>
+                    </div>
 
-                    <span class="bg-gray-100 text-gray-800 px-4 py-2 rounded-full text-sm font-semibold">
-                        Fast Claims Support
-                    </span>
+                    <div data-aos="fade-up" data-aos-delay="400" class="border-l-2 border-[#f28b19] pl-4">
+                        <h4 class="font-bold text-gray-900">Trusted Clients</h4>
+                        <p class="text-sm text-gray-600">Across Tanzania</p>
+                    </div>
 
                 </div>
+
+                
 
             </div>
 
@@ -750,128 +856,307 @@ Engineering Breakdown
     </div>
 
 </section>
+<section class="py-5 py-7 bg-gray-50 relative overflow-hidden">
 
-<footer class="bg-gray-900 text-gray-300 pt-12">
+    <!-- BACKGROUND GLOW -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(242,139,25,0.05),transparent_60%)]"></div>
 
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+
+        <!-- TITLE -->
+        <div class="text-center mb-14" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 tracking-tight">
+                Our Partners & Coverage Network
+            </h2>
+
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto text-sm md:text-base">
+                We work with leading insurers, global underwriters, and trusted institutions
+                to deliver reliable and comprehensive risk solutions.
+            </p>
+        </div>
+
+        <!-- PARTNER GRID -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center">
+
+            <div data-aos="zoom-in" data-aos-delay="100"
+                 class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex items-center justify-center border border-gray-100 hover:border-gray-200">
+                <img src="images/partner-logo-01.jpg" class="h-10 opacity-70 hover:opacity-100 transition duration-300">
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="200"
+                 class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex items-center justify-center border border-gray-100 hover:border-gray-200">
+                <img src="images/partner-logo-02.jpg" class="h-10 opacity-70 hover:opacity-100 transition duration-300">
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="300"
+                 class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex items-center justify-center border border-gray-100 hover:border-gray-200">
+                <img src="images/partner-logo-03.jpg" class="h-10 opacity-70 hover:opacity-100 transition duration-300">
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="400"
+                 class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex items-center justify-center border border-gray-100 hover:border-gray-200">
+                <img src="images/partner-logo-04.jpg" class="h-10 opacity-70 hover:opacity-100 transition duration-300">
+            </div>
+
+            <div data-aos="zoom-in" data-aos-delay="500"
+                 class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 p-6 flex items-center justify-center border border-gray-100 hover:border-gray-200">
+                <img src="images/partner-logo-06.jpg" class="h-10 opacity-70 hover:opacity-100 transition duration-300">
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+</section>
+
+<section class="py-5 py-7 bg-white relative overflow-hidden">
+
+    <!-- subtle background glow -->
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(242,139,25,0.05),transparent_60%)]"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+
+        <!-- TITLE -->
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+                What Our Clients Say
+            </h2>
+
+            <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
+                Trusted by leading organizations, institutions, and professionals across Tanzania.
+            </p>
+        </div>
+
+        <!-- TESTIMONIAL GRID -->
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <!-- CARD 1 -->
+            <div data-aos="fade-up"
+                 class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 relative">
+
+                <div class="flex items-center gap-4 mb-5">
+                    <img src="images/people-01.jpg" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h4 class="font-bold text-gray-900">John Mwanga</h4>
+                        <p class="text-sm text-gray-500">Corporate Client</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    “Corporate Insurance Brokers has been instrumental in managing our company’s risk.
+                    Their professionalism and response time is unmatched.”
+                </p>
+
+            </div>
+
+            <!-- CARD 2 -->
+            <div data-aos="fade-up" data-aos-delay="150"
+                 class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 relative">
+
+                <div class="flex items-center gap-4 mb-5">
+                    <img src="images/people-02.jpg" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h4 class="font-bold text-gray-900">Sarah Juma</h4>
+                        <p class="text-sm text-gray-500">Business Owner</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    “Their guidance helped us choose the right insurance cover.
+                    The claims process is smooth and very reliable.”
+                </p>
+
+            </div>
+
+            <!-- CARD 3 -->
+            <div data-aos="fade-up" data-aos-delay="300"
+                 class="bg-gray-50 p-8 rounded-2xl shadow-sm hover:shadow-xl transition duration-300 relative">
+
+                <div class="flex items-center gap-4 mb-5">
+                    <img src="images/people-03.jpg" class="w-12 h-12 rounded-full object-cover">
+                    <div>
+                        <h4 class="font-bold text-gray-900">David Kimaro</h4>
+                        <p class="text-sm text-gray-500">Institutional Client</p>
+                    </div>
+                </div>
+
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    “A highly professional team. They understand complex insurance needs and deliver
+                    tailored solutions efficiently.”
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- OPTIONAL STARS / TRUST STRIP -->
+        <div class="mt-16 text-center" data-aos="zoom-in">
+            <p class="text-gray-500 text-sm">
+                ★★★★★ Rated by corporate clients across Tanzania
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="bg-[#000000] text-gray-300 pt-14">
+
+    <div class="max-w-7xl mx-auto px-6">
 
         <!-- TOP SECTION -->
-        <div class="grid md:grid-cols-2 gap-10 pb-10 border-b border-gray-700">
+        <div class="grid md:grid-cols-3 gap-12 pb-12 border-b border-gray-800 text-center md:text-left">
 
-            <!-- COMPANY INFO -->
-            <div>
-                <h2 class="text-2xl font-bold text-white mb-4">
-                    Corporate Insurance<span class="text-[#f28b19]"> Brokers</span>
+            <!-- COMPANY -->
+            <div data-aos="fade-up">
+                <h2 class="text-2xl font-bold text-white mb-5 tracking-wide">
+                    CORPORATE INSURANCE <span class="text-white">BROKERS</span>
                 </h2>
 
-                <div class="space-y-3 text-sm">
+                <p class="text-sm leading-relaxed text-gray-50">
+                    We provide world-class insurance broking and risk management solutions
+                    tailored for individuals, corporates, and institutions across Tanzania.
+                </p>
+
+                <!-- SOCIAL (IMPROVED BIGGER + ANIMATION) -->
+                <div class="flex justify-center md:justify-start gap-5 mt-6">
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-facebook text-base"></i>
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-twitter text-base"></i>
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-linkedin text-base"></i>
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-instagram text-base"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- NAVIGATION (MORE PROFESSIONAL STRUCTURE) -->
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-2xl font-bold text-white mb-5">
+                    QUICK NAVIGATION
+                </h2>
+
+                <ul class="space-y-3 text-sm">
+
+                    <li>
+                        <a href="index.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="cooperate.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            CSR
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            News & Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallarey.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                           Gallery
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-2xl font-bold text-white mb-5">
+                    REACH US
+                </h2>
+
+                <div class="space-y-4 text-sm text-gray-50">
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-map-marker text-[#f28b19] mt-1"></i>
+                        <i class="fa fa-map-marker mt-1 text-white"></i>
                         2nd Floor, GOLDEN HEIGHTS, Chole Road, Masaki
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-envelope text-[#f28b19] mt-1"></i>
-                        P.o.Box 360, Dar es Salaam
-                    </p>
-
-                    <p class="flex items-start gap-3">
-                        <i class="fa fa-phone text-[#f28b19] mt-1"></i>
+                        <i class="fa fa-phone mt-1 text-white"></i>
                         +255 (22) 260 2508 / 260 2509
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-mobile text-[#f28b19] mt-1"></i>
+                        <i class="fa fa-mobile mt-1 text-white"></i>
                         +255 719 844 888
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-envelope-open text-[#f28b19] mt-1"></i>
-                        <a href="mailto:info@cib.co.tz" class="hover:text-white transition">
-                            info@cib.co.tz
-                        </a>
+                        <i class="fa fa-envelope mt-1 text-white"></i>
+                        info@cib.co.tz
                     </p>
 
                 </div>
 
-                <a href="#"
-                   class="inline-block mt-5 bg-[#f28b19] text-white px-6 py-2 rounded hover:bg-orange-600 transition">
-                    Contact Us
-                </a>
-            </div>
-
-            <!-- QUICK CONTACT / CTA -->
-            <div>
-                <h2 class="text-2xl font-bold text-white mb-4">
-                    Get In<span class="text-[#f28b19]"> Touch</span>
-                </h2>
-
-                <p class="text-sm mb-4">
-                    Reach out to us for reliable insurance solutions tailored to your needs. 
-                    Our team is ready to assist individuals, businesses, and institutions.
-                </p>
-
-                <div class="space-y-3 text-sm">
-
-                    <p class="flex items-center gap-3">
-                        <i class="fa fa-clock text-[#f28b19]"></i>
-                        Mon - Fri: 8:00 AM - 5:00 PM
-                    </p>
-
-                    <p class="flex items-center gap-3">
-                        <i class="fa fa-globe text-[#f28b19]"></i>
-                        Dar es Salaam, Tanzania
-                    </p>
-
+                <!-- MAP -->
+                <div class="mt-6 overflow-hidden rounded-lg border border-gray-800">
+                    <iframe 
+                        class="w-full h-44"
+                        src="https://www.google.com/maps?q=Masaki,Dar+es+Salaam&output=embed"
+                        loading="lazy">
+                    </iframe>
                 </div>
 
-                <a href="#"
-                   class="inline-block mt-5 border border-[#f28b19] text-[#f28b19] px-6 py-2 rounded hover:bg-[#f28b19] hover:text-white transition">
-                    Request Quote
-                </a>
             </div>
 
         </div>
 
-        <!-- NAV + SOCIAL -->
-        <div class="flex flex-col md:flex-row justify-between items-center py-6 gap-6">
+        <!-- BOTTOM -->
+        <div class="flex flex-col md:flex-row justify-between items-center py-6 gap-4 text-center">
 
-            <!-- NAV -->
-            <ul class="flex flex-wrap gap-6 text-sm">
-                <li><a href="#" class="hover:text-white transition">Home</a></li>
-                <li><a href="#" class="hover:text-white transition">About Us</a></li>
-                <li><a href="#" class="hover:text-white transition">Services</a></li>
-                <li><a href="#" class="hover:text-white transition">Products</a></li>
-                <li><a href="#" class="hover:text-white transition">Contact</a></li>
-            </ul>
-
-            <!-- SOCIAL -->
-            <div class="flex gap-4 text-lg">
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-linkedin"></i></a>
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-instagram"></i></a>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- COPYRIGHT -->
-    <div class="bg-gray-800 text-gray-400 text-sm py-4">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-
-            <p>
+            <p class="text-xs text-gray-50">
                 © 2026 Corporate Insurance Brokers Ltd. All Rights Reserved.
             </p>
 
-            <div class="flex gap-6">
-                <a href="#" class="hover:text-white">Terms & Conditions</a>
-                <a href="#" class="hover:text-white">Privacy Policy</a>
+            <div class="flex gap-6 text-xs">
+                <a href="#" class="hover:text-white transition">Terms</a>
+                <a href="#" class="hover:text-white transition">Privacy</a>
             </div>
 
         </div>
+
     </div>
 
 </footer>

@@ -5,59 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>cooperate Insurance Broker</title>
     <link rel="icon" type="image/png" sizes="80x80" href="images/cib.jpg?v=1">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
 </head>
 
-<body class="font-sans bg-gray-50">
+<body class="font-sans bg-white">
 
 <!-- TOP BAR -->
-<div class="bg-[#f28b19] text-white text-sm py-3">
-    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+<div class="bg-[#f28b19] text-white text-sm py-3 w-full">
 
-        <!-- Address -->
-        <div class="flex items-center gap-3 text-center md:text-left">
+    <div class="flex flex-col md:flex-row md:items-center px-4">
 
-            <!-- ICON WITH BACKGROUND -->
-            <span class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full">
-                
+        <!-- LEFT SIDE (UNCHANGED ON DESKTOP) -->
+        <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left">
+
+            <span class="font-bold">
+                <marquee>Secure Your Future with Confidence.</marquee>
             </span>
 
-            <span>
-               <marquee behavior="" direction="" class="font-bold"> Secure Your Future with Confidence.</marquee>
-            </span>
+            <a href="tel:+255719844888" class="flex items-center gap-2 font-semibold hover:underline">
+                Contact Us :
+                <span>+255 719 844 888</span>
+            </a>
+
         </div>
 
-        <!-- Social -->
-        <div class="flex gap-3 mt-3 md:mt-0">
+        <!-- RIGHT SIDE (UNCHANGED ON DESKTOP) -->
+        <div class="flex items-center gap-3 ml-auto mt-3 md:mt-0 justify-center md:justify-end">
 
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-twitter"></i>
+            <!-- Social Icons -->
+            <div class="flex gap-3">
+
+                <a href="https://twitter.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                <a href="https://facebook.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-facebook"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+
+                <a href="https://instagram.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+            </div>
+
+            <!-- LOGIN BUTTON (UNCHANGED DESKTOP) -->
+            <a href="https://mail.yourdomain.com"
+               class="bg-white text-gray-900 px-4 py-1.5 rounded-md text-xs md:text-sm font-semibold transition ml-3">
+                Login
             </a>
-
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-facebook"></i>
-            </a>
-
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-linkedin"></i>
-            </a>
-
-            
-
-            <a href="#" class="bg-[#f28b19] w-8 h-8 flex items-center justify-center rounded-full hover:opacity-80 hover:scale-110 transition">
-                <i class="fa fa-instagram"></i>
-            </a>
-
-            
 
         </div>
 
     </div>
 </div>
-
 <!-- NAVBAR -->
 <header class="bg-white text-gray-900 sticky top-0 z-50 shadow-md">
 
@@ -65,7 +78,7 @@
 
         <!-- LOGO -->
         <div class="flex items-center">
-            <a href="index.html" class="font-bold tracking-wide text-[#f28b19]">
+            <a href="index.html">
                 <img src="images/CIB logo.png" alt="Insurance Logo" class="h-14 w-auto">
             </a>
         </div>
@@ -81,24 +94,23 @@
 
             <ul class="flex flex-col md:flex-row gap-6 md:gap-8 p-6 md:p-0 font-medium">
 
+                <!-- HOME -->
                 <li><a href="index.html" class="hover:text-[#f28b19]">Home</a></li>
 
+                <!-- ABOUT -->
                 <li><a href="about.html" class="hover:text-[#f28b19]">About Us</a></li>
 
-                <!-- PRODUCTS DROPDOWN -->
+                <!-- PRODUCTS & SERVICES -->
                 <li class="relative">
-
                     <button onclick="toggleDropdown('productsMenu')"
                         class="flex items-center gap-2 hover:text-[#f28b19]">
-                        Our Products <i class="fa fa-chevron-down text-xs"></i>
+                        Products & Services <i class="fa fa-chevron-down text-xs"></i>
                     </button>
 
                     <ul id="productsMenu"
                         class="hidden absolute left-0 mt-4 bg-white text-black w-72 rounded shadow-lg p-4 space-y-2 z-50">
 
-                        <li class="font-bold text-[#f28b19]">Our Products & Services</li>
-                        <li class="text-xs text-gray-500 mb-2">Available insurance categories</li>
-
+                        <li class="font-bold text-[#f28b19]">Products & Services</li>
                         <hr>
 
                         <li><a href="Property-Insurance.html" class="block hover:text-[#f28b19]">Property Insurance</a></li>
@@ -109,38 +121,46 @@
                         <li><a href="Health-Insurance.html" class="block hover:text-[#f28b19]">Health Insurance</a></li>
 
                     </ul>
-
                 </li>
 
-                <li><a href="cooperate.html" class="hover:text-[#f28b19]">CSR</a></li>
-
-                <!-- MEDIA DROPDOWN (FIXED) -->
+                <!-- MEDIA GALLERY -->
                 <li class="relative">
-
                     <button onclick="toggleDropdown('mediaMenu')"
                         class="flex items-center gap-2 hover:text-[#f28b19]">
-                        Media <i class="fa fa-chevron-down text-xs"></i>
+                        Media Gallery <i class="fa fa-chevron-down text-xs"></i>
                     </button>
 
                     <ul id="mediaMenu"
                         class="hidden absolute left-0 mt-4 bg-white text-black w-64 rounded shadow-lg p-4 space-y-2 z-50">
 
-                        <li class="font-bold text-[#f28b19]">Media</li>
-                        <li class="text-xs text-gray-500 mb-2">Updates & Content</li>
-
+                        <li class="font-bold text-[#f28b19]">Media Gallery</li>
                         <hr>
 
                         <li><a href="blog.html" class="block hover:text-[#f28b19]">Blog</a></li>
                         <li><a href="gallarey.html" class="block hover:text-[#f28b19]">Gallery</a></li>
-                        <li><a href="team.html" class="block hover:text-[#f28b19]">Our Team</a></li>
+                       
 
                     </ul>
-
                 </li>
 
-                <li><a href="contact.html" class="hover:text-[#f28b19]">Contact us</a></li>
-                
-                <li><a href="quote.html" class="hover:text-[#f28b19]">Quick Quote</a></li>
+                <!-- CSR -->
+                <li><a href="cooperate.html" class="hover:text-[#f28b19]">CSR</a></li>
+
+                <!-- CONTACT WITH DROPDOWN -->
+                <li class="relative">
+                    <button onclick="toggleDropdown('contactMenu')"
+                        class="flex items-center gap-2 hover:text-[#f28b19]">
+                        Contact Us <i class="fa fa-chevron-down text-xs"></i>
+                    </button>
+
+                    <ul id="contactMenu"
+                        class="hidden absolute left-0 mt-4 bg-white text-black w-56 rounded shadow-lg p-4 space-y-2 z-50">
+
+                        <li><a href="contact.html" class="block hover:text-[#f28b19]">Contact Page</a></li>
+                        <li><a href="quote.html" class="block hover:text-[#f28b19] font-semibold">Quick Quote</a></li>
+
+                    </ul>
+                </li>
 
             </ul>
         </nav>
@@ -174,73 +194,81 @@
         }
     });
 </script>
-<!-- HERO SECTION -->
-<section class="relative w-full h-[40vh] flex items-center bg-gray-900 overflow-hidden">
+<section class="relative w-full h-[40vh] flex items-center overflow-hidden">
 
     <!-- BACKGROUND IMAGE -->
-    <img src="images/3.jpg"
-         class="absolute inset-0 w-full h-full object-cover opacity-60">
+    <img src="images/heath.jpg"
+         class="absolute inset-0 w-full h-full object-cover scale-105">
 
-    <!-- OVERLAY -->
-    <div class="absolute inset-0 bg-black/60"></div>
+    <!-- PREMIUM OVERLAY -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
 
     <!-- CONTENT -->
     <div class="relative max-w-7xl mx-auto px-6 w-full">
 
         <div class="max-w-2xl">
 
-            <h1 class="text-white text-3xl md:text-5xl font-bold mb-4">
+            <h1 data-aos="fade-up"
+                class="text-white text-3xl md:text-5xl font-bold mb-4">
                 Health Insurance
             </h1>
 
-            <p class="text-gray-200 text-sm md:text-lg">
+            <p data-aos="fade-up" data-aos-delay="150"
+               class="text-gray-200 text-sm md:text-lg leading-relaxed">
                 Reliable medical and personal protection solutions to safeguard individuals and families against unexpected health risks.
             </p>
 
         </div>
 
     </div>
+
 </section>
 
 
-<!-- MAIN CONTENT -->
-<section class="bg-gray-50 py-16">
 
-    <div class="w-full lg:w-[80%] mx-auto px-6">
+<section class="bg-gray-50 py-5 py-7">
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <div class="w-full lg:w-[85%] mx-auto px-6">
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
             <!-- LEFT IMAGE -->
-            <div class="relative rounded-2xl overflow-hidden shadow-xl group">
+            <div data-aos="fade-right"
+                 class="relative rounded-2xl overflow-hidden shadow-xl group">
 
-                <img src="images/3.jpg"
-                     class="w-full h-[420px] object-cover group-hover:scale-105 transition duration-500">
+                <img src="images/heath.jpg"
+                     class="w-full h-[440px] object-cover group-hover:scale-105 transition duration-500">
+
+                <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition"></div>
 
             </div>
 
             <!-- RIGHT CONTENT -->
-            <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+            <div data-aos="fade-left"
+                 class="bg-white p-10 rounded-2xl shadow-sm border border-gray-100">
 
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">
+                <h2 class="text-2xl font-bold text-gray-900 mb-4">
                     Health Coverage Solutions
                 </h2>
 
-                <p class="text-gray-600 mb-6">
+                <p class="text-gray-600 mb-8 leading-relaxed">
                     We offer tailored health insurance solutions designed to reduce the financial burden of medical emergencies
                     and provide peace of mind for individuals, families, and organizations.
                 </p>
 
                 <!-- LIST -->
-                <ul class="space-y-3 text-gray-700">
+                <ul class="space-y-4 text-gray-700">
 
-                    <li class="flex items-start gap-3">
+                    <li data-aos="fade-up"
+                        class="flex items-start gap-3">
                         <i class="fa fa-check text-[#f28b19] mt-1"></i>
-                        Personal Accident Insurance
+                        <span>Personal Accident Insurance</span>
                     </li>
 
-                    <li class="flex items-start gap-3">
+                    <li data-aos="fade-up" data-aos-delay="100"
+                        class="flex items-start gap-3">
                         <i class="fa fa-check text-[#f28b19] mt-1"></i>
-                        Medical Expenses Insurance
+                        <span>Medical Expenses Insurance</span>
                     </li>
 
                 </ul>
@@ -253,83 +281,72 @@
 
 </section>
 
-<section class="bg-gray-50 py-5">
+<section class="bg-white py-5 py-7">
 
     <div class="w-full lg:w-[80%] mx-auto px-6">
 
         <!-- TITLE -->
-        <div class="mb-10">
-            <h2 class="text-3xl  text-gray-800">Our Roles</h2>
+        <div data-aos="fade-up" class="mb-10">
+            <h2 class="text-3xl font-bold text-gray-900">Our Roles</h2>
         </div>
 
         <!-- CONTENT CARD -->
-        <div class="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+        <div data-aos="fade-up" data-aos-delay="150"
+             class="bg-gray-50 p-10 rounded-2xl shadow-sm border border-gray-100">
 
             <p class="text-gray-700 mb-6">
                 In short our role is that of professional adviser.
             </p>
 
-            <p class="text-gray-700 mb-4">
-                We shall therefore:-
+            <p class="text-gray-700 mb-6">
+                We shall therefore:
             </p>
 
             <!-- LIST -->
             <ul class="space-y-4 text-gray-700">
 
                 <li class="flex gap-3">
-                    <span class="text-[#f28b19] font-bold">-</span>
-                    <span>Advise on the best Insurance Company;</span>
+                    <span class="text-[#f28b19] font-bold">01</span>
+                    Advise on the best Insurance Company;
                 </li>
 
                 <li class="flex gap-3">
-                    <span class="text-[#f28b19] font-bold">-</span>
-                    <span>
-                        Advice your Company on insurance matters and the covers best suited to your needs;
-                    </span>
+                    <span class="text-[#f28b19] font-bold">02</span>
+                    Advice your Company on insurance matters and the covers best suited to your needs;
                 </li>
 
                 <li class="flex gap-3">
-                    <span class="text-[#f28b19] font-bold">-</span>
-                    <span>Negotiate for best terms of cover on your behalf;</span>
+                    <span class="text-[#f28b19] font-bold">03</span>
+                    Negotiate for best terms of cover on your behalf;
                 </li>
 
                 <li class="flex gap-3">
-                    <span class="text-[#f28b19] font-bold">-</span>
-                    <span>
-                        Provide continuing and independent advice on loss prevention and Administration;
-                    </span>
+                    <span class="text-[#f28b19] font-bold">04</span>
+                    Provide continuing and independent advice on loss prevention and Administration;
                 </li>
 
                 <li class="flex gap-3">
-                    <span class="text-[#f28b19] font-bold">-</span>
-                    <span>
-                        Assist /control yourself Insurance programs, where necessary, with the Minimum cost practicable;
-                    </span>
+                    <span class="text-[#f28b19] font-bold">05</span>
+                    Assist/control insurance programs with minimum cost practicable;
                 </li>
 
                 <li class="flex gap-3">
-                    <span class="text-[#f28b19] font-bold">-</span>
-                    <span>
-                        Assist with claim processing by way of:
-                    </span>
+                    <span class="text-[#f28b19] font-bold">06</span>
+                    Assist with claim processing by way of:
                 </li>
 
-                <!-- SUB LIST -->
-                <ul class="ml-8 space-y-2 text-gray-600">
+            </ul>
 
-                    <li>(I) Immediate notification of losses to Insurers</li>
-
-                    <li>(ii) Advise your Company of your rights and obligation under the policy.</li>
-
-                    <li>(iii) Arrange for the completion of appropriate claim forms at time of loss.</li>
-
-                </ul>
-
+            <!-- SUB LIST -->
+            <ul class="ml-10 mt-5 space-y-2 text-gray-600 text-sm">
+                <li>01. Immediate notification of losses to Insurers</li>
+                <li>02. Advise your Company of your rights and obligations under the policy</li>
+                <li>03. Arrange for the completion of appropriate claim forms at time of loss</li>
             </ul>
 
             <!-- NOTE -->
             <div class="mt-8 border-l-4 border-[#f28b19] bg-[#f28b19]/10 p-4 rounded">
-                <p class="text-gray-700">
+                <p class="text-gray-700 text-sm">
                     <span class="font-semibold">NB:</span>
                     We charge no fees for services rendered to our client.
                 </p>
@@ -340,130 +357,166 @@
     </div>
 
 </section>
+<footer class="bg-[#000000] text-gray-300 pt-14">
 
-<footer class="bg-gray-900 text-gray-300 pt-12">
-
-    <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-7xl mx-auto px-6">
 
         <!-- TOP SECTION -->
-        <div class="grid md:grid-cols-2 gap-10 pb-10 border-b border-gray-700">
+        <div class="grid md:grid-cols-3 gap-12 pb-12 border-b border-gray-800 text-center md:text-left">
 
-            <!-- COMPANY INFO -->
-            <div>
-                <h2 class="text-2xl font-bold text-white mb-4">
-                    Corporate Insurance<span class="text-[#f28b19]"> Brokers</span>
+            <!-- COMPANY -->
+            <div data-aos="fade-up">
+                <h2 class="text-2xl font-bold text-white mb-5 tracking-wide">
+                    CORPORATE INSURANCE <span class="text-white">BROKERS</span>
                 </h2>
 
-                <div class="space-y-3 text-sm">
+                <p class="text-sm leading-relaxed text-gray-50">
+                    We provide world-class insurance broking and risk management solutions
+                    tailored for individuals, corporates, and institutions across Tanzania.
+                </p>
+
+                <!-- SOCIAL (IMPROVED BIGGER + ANIMATION) -->
+                <div class="flex justify-center md:justify-start gap-5 mt-6">
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-facebook text-base"></i>
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-twitter text-base"></i>
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-linkedin text-base"></i>
+                    </a>
+
+                    <a href="#"
+                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
+                        <i class="fa fa-instagram text-base"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- NAVIGATION (MORE PROFESSIONAL STRUCTURE) -->
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-2xl font-bold text-white mb-5">
+                    QUICK NAVIGATION
+                </h2>
+
+                <ul class="space-y-3 text-sm">
+
+                    <li>
+                        <a href="index.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="cooperate.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            CSR
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="blog.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                            News & Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallarey.html" class="hover:text-white transition flex items-center gap-2 group">
+                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
+                           Gallery
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-2xl font-bold text-white mb-5">
+                    REACH US
+                </h2>
+
+                <div class="space-y-4 text-sm text-gray-50">
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-map-marker text-[#f28b19] mt-1"></i>
+                        <i class="fa fa-map-marker mt-1 text-white"></i>
                         2nd Floor, GOLDEN HEIGHTS, Chole Road, Masaki
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-envelope text-[#f28b19] mt-1"></i>
-                        P.o.Box 360, Dar es Salaam
-                    </p>
-
-                    <p class="flex items-start gap-3">
-                        <i class="fa fa-phone text-[#f28b19] mt-1"></i>
+                        <i class="fa fa-phone mt-1 text-white"></i>
                         +255 (22) 260 2508 / 260 2509
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-mobile text-[#f28b19] mt-1"></i>
+                        <i class="fa fa-mobile mt-1 text-white"></i>
                         +255 719 844 888
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-envelope-open text-[#f28b19] mt-1"></i>
-                        <a href="mailto:info@cib.co.tz" class="hover:text-white transition">
-                            info@cib.co.tz
-                        </a>
+                        <i class="fa fa-envelope mt-1 text-white"></i>
+                        info@cib.co.tz
                     </p>
 
                 </div>
 
-                <a href="#"
-                   class="inline-block mt-5 bg-[#f28b19] text-white px-6 py-2 rounded hover:bg-orange-600 transition">
-                    Contact Us
-                </a>
-            </div>
-
-            <!-- QUICK CONTACT / CTA -->
-            <div>
-                <h2 class="text-2xl font-bold text-white mb-4">
-                    Get In<span class="text-[#f28b19]"> Touch</span>
-                </h2>
-
-                <p class="text-sm mb-4">
-                    Reach out to us for reliable insurance solutions tailored to your needs. 
-                    Our team is ready to assist individuals, businesses, and institutions.
-                </p>
-
-                <div class="space-y-3 text-sm">
-
-                    <p class="flex items-center gap-3">
-                        <i class="fa fa-clock text-[#f28b19]"></i>
-                        Mon - Fri: 8:00 AM - 5:00 PM
-                    </p>
-
-                    <p class="flex items-center gap-3">
-                        <i class="fa fa-globe text-[#f28b19]"></i>
-                        Dar es Salaam, Tanzania
-                    </p>
-
+                <!-- MAP -->
+                <div class="mt-6 overflow-hidden rounded-lg border border-gray-800">
+                    <iframe 
+                        class="w-full h-44"
+                        src="https://www.google.com/maps?q=Masaki,Dar+es+Salaam&output=embed"
+                        loading="lazy">
+                    </iframe>
                 </div>
 
-                <a href="#"
-                   class="inline-block mt-5 border border-[#f28b19] text-[#f28b19] px-6 py-2 rounded hover:bg-[#f28b19] hover:text-white transition">
-                    Request Quote
-                </a>
             </div>
 
         </div>
 
-        <!-- NAV + SOCIAL -->
-        <div class="flex flex-col md:flex-row justify-between items-center py-6 gap-6">
+        <!-- BOTTOM -->
+        <div class="flex flex-col md:flex-row justify-between items-center py-6 gap-4 text-center">
 
-            <!-- NAV -->
-            <ul class="flex flex-wrap gap-6 text-sm">
-                <li><a href="#" class="hover:text-white transition">Home</a></li>
-                <li><a href="#" class="hover:text-white transition">About Us</a></li>
-                <li><a href="#" class="hover:text-white transition">Services</a></li>
-                <li><a href="#" class="hover:text-white transition">Products</a></li>
-                <li><a href="#" class="hover:text-white transition">Contact</a></li>
-            </ul>
-
-            <!-- SOCIAL -->
-            <div class="flex gap-4 text-lg">
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-linkedin"></i></a>
-                <a href="#" class="hover:text-[#f28b19]"><i class="fa fa-instagram"></i></a>
-            </div>
-
-        </div>
-
-    </div>
-
-    <!-- COPYRIGHT -->
-    <div class="bg-gray-800 text-gray-400 text-sm py-4">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
-
-            <p>
+            <p class="text-xs text-gray-50">
                 © 2026 Corporate Insurance Brokers Ltd. All Rights Reserved.
             </p>
 
-            <div class="flex gap-6">
-                <a href="#" class="hover:text-white">Terms & Conditions</a>
-                <a href="#" class="hover:text-white">Privacy Policy</a>
+            <div class="flex gap-6 text-xs">
+                <a href="#" class="hover:text-white transition">Terms</a>
+                <a href="#" class="hover:text-white transition">Privacy</a>
             </div>
 
         </div>
+
     </div>
 
 </footer>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
