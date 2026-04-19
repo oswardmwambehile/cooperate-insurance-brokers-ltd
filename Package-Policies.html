@@ -97,8 +97,24 @@
                 <!-- HOME -->
                 <li><a href="index.html" class="hover:text-[#f28b19]">Home</a></li>
 
-                <!-- ABOUT -->
-                <li><a href="about.html" class="hover:text-[#f28b19]">About Us</a></li>
+                <!-- ABOUT US DROPDOWN -->
+                <li class="relative">
+                    <button onclick="toggleDropdown('aboutMenu')"
+                        class="flex items-center gap-2 hover:text-[#f28b19]">
+                        About Us <i class="fa fa-chevron-down text-xs"></i>
+                    </button>
+
+                    <ul id="aboutMenu"
+                        class="hidden absolute left-0 mt-4 bg-white text-black w-64 rounded shadow-lg p-4 space-y-2 z-50">
+
+                        <li><a href="about.html" class="block hover:text-[#f28b19]">Overview</a></li>
+                        <li><a href="team.html" class="block hover:text-[#f28b19]">Our Team</a></li>
+                        <li><a href="partnership.html" class="block hover:text-[#f28b19]">Partnership</a></li>
+                        <li><a href="careers.html" class="block hover:text-[#f28b19]">Careers</a></li>
+                        <li><a href="cooperate.html" class="block hover:text-[#f28b19]">CSR</a></li>
+
+                    </ul>
+                </li>
 
                 <!-- PRODUCTS & SERVICES -->
                 <li class="relative">
@@ -123,30 +139,28 @@
                     </ul>
                 </li>
 
-                <!-- MEDIA GALLERY -->
+                <!-- MEDIA -->
                 <li class="relative">
                     <button onclick="toggleDropdown('mediaMenu')"
                         class="flex items-center gap-2 hover:text-[#f28b19]">
-                        Media Gallery <i class="fa fa-chevron-down text-xs"></i>
+                        Media <i class="fa fa-chevron-down text-xs"></i>
                     </button>
 
                     <ul id="mediaMenu"
                         class="hidden absolute left-0 mt-4 bg-white text-black w-64 rounded shadow-lg p-4 space-y-2 z-50">
 
-                        <li class="font-bold text-[#f28b19]">Media Gallery</li>
-                        <hr>
-
                         <li><a href="blog.html" class="block hover:text-[#f28b19]">Blog</a></li>
-                        <li><a href="gallarey.html" class="block hover:text-[#f28b19]">Gallery</a></li>
-                        
+                        <li><a href="videos.html" class="block hover:text-[#f28b19]">Video Gallery</a></li>
+                        <li><a href="gallarey.html" class="block hover:text-[#f28b19]">Photo Gallery</a></li>
+                        <li><a href="resources.html" class="block hover:text-[#f28b19]">Resources & Downloads</a></li>
 
                     </ul>
                 </li>
 
-                <!-- CSR -->
-                <li><a href="cooperate.html" class="hover:text-[#f28b19]">CSR</a></li>
+                <!-- NEWS & EVENTS -->
+                <li><a href="news.html" class="hover:text-[#f28b19]">News & Events</a></li>
 
-                <!-- CONTACT WITH DROPDOWN -->
+                <!-- CONTACT -->
                 <li class="relative">
                     <button onclick="toggleDropdown('contactMenu')"
                         class="flex items-center gap-2 hover:text-[#f28b19]">
@@ -156,7 +170,7 @@
                     <ul id="contactMenu"
                         class="hidden absolute left-0 mt-4 bg-white text-black w-56 rounded shadow-lg p-4 space-y-2 z-50">
 
-                        <li><a href="contact.html" class="block hover:text-[#f28b19]">Contact Page</a></li>
+                        <li><a href="contact.html" class="block hover:text-[#f28b19]">Contacts</a></li>
                         <li><a href="quote.html" class="block hover:text-[#f28b19] font-semibold">Quick Quote</a></li>
 
                     </ul>
@@ -167,7 +181,6 @@
 
     </div>
 </header>
-
 <script>
     const btn = document.getElementById("menu-btn");
     const menu = document.getElementById("menu");
@@ -363,157 +376,112 @@
 
 </section>
 
-<footer class="bg-[#000000] text-gray-300 pt-14">
+<footer class="bg-black text-white pt-16">
 
     <div class="max-w-7xl mx-auto px-6">
 
-        <!-- TOP SECTION -->
-        <div class="grid md:grid-cols-3 gap-12 pb-12 border-b border-gray-800 text-center md:text-left">
+        <!-- TOP -->
+        <div class="grid md:grid-cols-3 gap-10 pb-12 border-b border-gray-800">
 
             <!-- COMPANY -->
             <div data-aos="fade-up">
-                <h2 class="text-2xl font-bold text-white mb-5 tracking-wide">
-                    CORPORATE INSURANCE <span class="text-white">BROKERS</span>
+                <h2 class="text-lg font-semibold mb-4 tracking-wide text-[#f28b19]">
+                    CIB
                 </h2>
 
-                <p class="text-sm leading-relaxed text-gray-50">
+                <p class="text-sm leading-relaxed max-w-sm text-white">
                     We provide world-class insurance broking and risk management solutions
                     tailored for individuals, corporates, and institutions across Tanzania.
                 </p>
 
-                <!-- SOCIAL (IMPROVED BIGGER + ANIMATION) -->
-                <div class="flex justify-center md:justify-start gap-5 mt-6">
+                <!-- SOCIAL -->
+                <div class="flex gap-4 mt-6">
 
-                    <a href="#"
-                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
-                        <i class="fa fa-facebook text-base"></i>
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-700 hover:bg-[#f28b19] hover:text-white transition duration-300">
+                        <i class="fa fa-facebook text-sm"></i>
                     </a>
 
-                    <a href="#"
-                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
-                        <i class="fa fa-twitter text-base"></i>
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-700 hover:bg-[#f28b19] hover:text-white transition duration-300">
+                        <i class="fa fa-twitter text-sm"></i>
                     </a>
 
-                    <a href="#"
-                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
-                        <i class="fa fa-linkedin text-base"></i>
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-700 hover:bg-[#f28b19] hover:text-white transition duration-300">
+                        <i class="fa fa-linkedin text-sm"></i>
                     </a>
 
-                    <a href="#"
-                       class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:bg-white hover:text-black transition transform hover:scale-110 duration-300">
-                        <i class="fa fa-instagram text-base"></i>
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-700 hover:bg-[#f28b19] hover:text-white transition duration-300">
+                        <i class="fa fa-instagram text-sm"></i>
                     </a>
 
                 </div>
             </div>
 
-            <!-- NAVIGATION (MORE PROFESSIONAL STRUCTURE) -->
+            <!-- QUICK LINKS -->
             <div data-aos="fade-up" data-aos-delay="100">
-                <h2 class="text-2xl font-bold text-white mb-5">
-                    QUICK NAVIGATION
+                <h2 class="text-lg font-semibold mb-4 text-[#f28b19]">
+                    QUICK LINKS
                 </h2>
 
-                <ul class="space-y-3 text-sm">
+                <ul class="space-y-2 text-sm">
 
-                    <li>
-                        <a href="index.html" class="hover:text-white transition flex items-center gap-2 group">
-                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="about.html" class="hover:text-white transition flex items-center gap-2 group">
-                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
-                            About Us
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="cooperate.html" class="hover:text-white transition flex items-center gap-2 group">
-                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
-                            CSR
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html" class="hover:text-white transition flex items-center gap-2 group">
-                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
-                            Contact
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="blog.html" class="hover:text-white transition flex items-center gap-2 group">
-                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
-                            News & Events
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="gallarey.html" class="hover:text-white transition flex items-center gap-2 group">
-                            <span class="w-1 h-1 bg-white rounded-full group-hover:scale-150 transition"></span>
-                           Gallery
-                        </a>
-                    </li>
+                    <li><a href="index.html" class="hover:text-[#f28b19] transition text-white">Home</a></li>
+                    <li><a href="about.html" class="hover:text-[#f28b19] transition text-white">About Us</a></li>
+                    <li><a href="team.html" class="hover:text-[#f28b19] transition text-white">Our Team</a></li>
+                    <li><a href="careers.html" class="hover:text-[#f28b19] transition text-white">Careers</a></li>
+                    <li><a href="news.html" class="hover:text-[#f28b19] transition text-white">News & Events</a></li>
+                    <li><a href="contact.html" class="hover:text-[#f28b19] transition text-white">Contacts</a></li>
 
                 </ul>
             </div>
 
             <!-- CONTACT -->
             <div data-aos="fade-up" data-aos-delay="200">
-                <h2 class="text-2xl font-bold text-white mb-5">
+                <h2 class="text-lg font-semibold mb-4 text-[#f28b19]">
                     REACH US
                 </h2>
 
-                <div class="space-y-4 text-sm text-gray-50">
+                <div class="space-y-3 text-sm text-white">
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-map-marker mt-1 text-white"></i>
-                        2nd Floor, GOLDEN HEIGHTS, Chole Road, Masaki
+                        <i class="fa fa-map-marker mt-1 text-[#f28b19]"></i>
+                        2nd Floor, Golden Heights, Chole Road, Masaki
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-phone mt-1 text-white"></i>
+                        <i class="fa fa-phone mt-1 text-[#f28b19]"></i>
                         +255 (22) 260 2508 / 260 2509
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-mobile mt-1 text-white"></i>
+                        <i class="fa fa-mobile mt-1 text-[#f28b19]"></i>
                         +255 719 844 888
                     </p>
 
                     <p class="flex items-start gap-3">
-                        <i class="fa fa-envelope mt-1 text-white"></i>
+                        <i class="fa fa-envelope mt-1 text-[#f28b19]"></i>
                         info@cib.co.tz
                     </p>
 
                 </div>
-
-                <!-- MAP -->
-                <div class="mt-6 overflow-hidden rounded-lg border border-gray-800">
-                    <iframe 
-                        class="w-full h-44"
-                        src="https://www.google.com/maps?q=Masaki,Dar+es+Salaam&output=embed"
-                        loading="lazy">
-                    </iframe>
-                </div>
-
             </div>
 
         </div>
 
         <!-- BOTTOM -->
-        <div class="flex flex-col md:flex-row justify-between items-center py-6 gap-4 text-center">
+        <div class="flex flex-col md:flex-row justify-between items-center py-6 gap-3 text-xs">
 
-            <p class="text-xs text-gray-50">
-                © 2026 Corporate Insurance Brokers Ltd. All Rights Reserved.
+            <p class="text-white">
+                © 2026 CIB. All Rights Reserved.
             </p>
 
-            <div class="flex gap-6 text-xs">
-                <a href="#" class="hover:text-white transition">Terms</a>
-                <a href="#" class="hover:text-white transition">Privacy</a>
+            <div class="flex gap-5">
+                <a href="#" class="hover:text-[#f28b19] transition text-white">Terms</a>
+                <a href="#" class="hover:text-[#f28b19] transition text-white">Privacy</a>
             </div>
+
+            <p class="text-white">
+                Developed by <span class="text-[#f28b19] font-medium">Beys</span>
+            </p>
 
         </div>
 

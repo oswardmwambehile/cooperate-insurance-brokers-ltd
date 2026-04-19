@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cooperate Insurance Broker</title>
+    <link rel="icon" type="image/png" sizes="80x80" href="images/cib.jpg?v=1">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+</head>
+
+<body class="font-sans bg-white">
+
+<!-- TOP BAR -->
+<div class="bg-[#f28b19] text-white text-sm py-3 w-full">
+
+    <div class="flex flex-col md:flex-row md:items-center px-4">
+
+        <!-- LEFT SIDE (UNCHANGED ON DESKTOP) -->
+        <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-center md:text-left">
+
+            <span class="font-bold">
+                <marquee>Secure Your Future with Confidence.</marquee>
+            </span>
+
+            <a href="tel:+255719844888" class="flex items-center gap-2 font-semibold hover:underline">
+                Contact Us :
+                <span>+255 719 844 888</span>
+            </a>
+
+        </div>
+
+        <!-- RIGHT SIDE (UNCHANGED ON DESKTOP) -->
+        <div class="flex items-center gap-3 ml-auto mt-3 md:mt-0 justify-center md:justify-end">
+
+            <!-- Social Icons -->
+            <div class="flex gap-3">
+
+                <a href="https://twitter.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-twitter"></i>
+                </a>
+
+                <a href="https://facebook.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-facebook"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+
+                <a href="https://instagram.com" target="_blank"
+                   class="bg-white text-[#f28b19] w-9 h-9 flex items-center justify-center rounded-full hover:scale-110 transition">
+                    <i class="fa fa-instagram"></i>
+                </a>
+
+            </div>
+
+            <!-- LOGIN BUTTON (UNCHANGED DESKTOP) -->
+            <a href="https://mail.yourdomain.com"
+               class="bg-white text-gray-900 px-4 py-1.5 rounded-md text-xs md:text-sm font-semibold transition ml-3">
+                Login
+            </a>
+
+        </div>
+
+    </div>
+</div>
+<!-- NAVBAR -->
+<header class="bg-white text-gray-900 sticky top-0 z-50 shadow-md">
+
+    <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center">
+            <a href="index.html">
+                <img src="images/CIB logo.png" alt="Insurance Logo" class="h-14 w-auto">
+            </a>
+        </div>
+
+        <!-- MOBILE BUTTON -->
+        <button id="menu-btn" class="md:hidden text-3xl text-[#f28b19]">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <!-- MENU -->
+        <nav id="menu"
+            class="hidden md:flex absolute md:static top-20 left-0 w-full md:w-auto bg-white">
+
+            <ul class="flex flex-col md:flex-row gap-6 md:gap-8 p-6 md:p-0 font-medium">
+
+                <!-- HOME -->
+                <li><a href="index.html" class="hover:text-[#f28b19]">Home</a></li>
+
+                <!-- ABOUT US DROPDOWN -->
+                <li class="relative">
+                    <button onclick="toggleDropdown('aboutMenu')"
+                        class="flex items-center gap-2 hover:text-[#f28b19]">
+                        About Us <i class="fa fa-chevron-down text-xs"></i>
+                    </button>
+
+                    <ul id="aboutMenu"
+                        class="hidden absolute left-0 mt-4 bg-white text-black w-64 rounded shadow-lg p-4 space-y-2 z-50">
+
+                        <li><a href="about.html" class="block hover:text-[#f28b19]">Overview</a></li>
+                        <li><a href="team.html" class="block hover:text-[#f28b19]">Our Team</a></li>
+                        <li><a href="partnership.html" class="block hover:text-[#f28b19]">Partnership</a></li>
+                        <li><a href="careers.html" class="block hover:text-[#f28b19]">Careers</a></li>
+                        <li><a href="cooperate.html" class="block hover:text-[#f28b19]">CSR</a></li>
+
+                    </ul>
+                </li>
+
+                <!-- PRODUCTS & SERVICES -->
+                <li class="relative">
+                    <button onclick="toggleDropdown('productsMenu')"
+                        class="flex items-center gap-2 hover:text-[#f28b19]">
+                        Products & Services <i class="fa fa-chevron-down text-xs"></i>
+                    </button>
+
+                    <ul id="productsMenu"
+                        class="hidden absolute left-0 mt-4 bg-white text-black w-72 rounded shadow-lg p-4 space-y-2 z-50">
+
+                        <li class="font-bold text-[#f28b19]">Products & Services</li>
+                        <hr>
+
+                        <li><a href="Property-Insurance.html" class="block hover:text-[#f28b19]">Property Insurance</a></li>
+                        <li><a href="Pecuniary-Insurance.html" class="block hover:text-[#f28b19]">Pecuniary Insurance</a></li>
+                        <li><a href="Motor-Insurance.html" class="block hover:text-[#f28b19]">Motor Insurance</a></li>
+                        <li><a href="Marine-Aviation.html" class="block hover:text-[#f28b19]">Marine & Aviation</a></li>
+                        <li><a href="Package-Policies.html" class="block hover:text-[#f28b19]">Package Policies</a></li>
+                        <li><a href="Health-Insurance.html" class="block hover:text-[#f28b19]">Health Insurance</a></li>
+
+                    </ul>
+                </li>
+
+                <!-- MEDIA -->
+                <li class="relative">
+                    <button onclick="toggleDropdown('mediaMenu')"
+                        class="flex items-center gap-2 hover:text-[#f28b19]">
+                        Media <i class="fa fa-chevron-down text-xs"></i>
+                    </button>
+
+                    <ul id="mediaMenu"
+                        class="hidden absolute left-0 mt-4 bg-white text-black w-64 rounded shadow-lg p-4 space-y-2 z-50">
+
+                        <li><a href="blog.html" class="block hover:text-[#f28b19]">Blog</a></li>
+                        <li><a href="videos.html" class="block hover:text-[#f28b19]">Video Gallery</a></li>
+                        <li><a href="gallarey.html" class="block hover:text-[#f28b19]">Photo Gallery</a></li>
+                        <li><a href="resources.html" class="block hover:text-[#f28b19]">Resources & Downloads</a></li>
+
+                    </ul>
+                </li>
+
+                <!-- NEWS & EVENTS -->
+                <li><a href="news.html" class="hover:text-[#f28b19]">News & Events</a></li>
+
+                <!-- CONTACT -->
+                <li class="relative">
+                    <button onclick="toggleDropdown('contactMenu')"
+                        class="flex items-center gap-2 hover:text-[#f28b19]">
+                        Contact Us <i class="fa fa-chevron-down text-xs"></i>
+                    </button>
+
+                    <ul id="contactMenu"
+                        class="hidden absolute left-0 mt-4 bg-white text-black w-56 rounded shadow-lg p-4 space-y-2 z-50">
+
+                        <li><a href="contact.html" class="block hover:text-[#f28b19]">Contacts</a></li>
+                        <li><a href="quote.html" class="block hover:text-[#f28b19] font-semibold">Quick Quote</a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+
+    </div>
+</header>
+<script>
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    function toggleDropdown(id) {
+        const dropdown = document.getElementById(id);
+
+        document.querySelectorAll("ul[id$='Menu']").forEach(el => {
+            if (el.id !== id) el.classList.add("hidden");
+        });
+
+        dropdown.classList.toggle("hidden");
+    }
+
+    document.addEventListener("click", function (e) {
+        if (!e.target.closest("li")) {
+            document.querySelectorAll("ul[id$='Menu']").forEach(el => {
+                el.classList.add("hidden");
+            });
+        }
+    });
+</script>
+
+
+<section class="relative w-full h-[40vh] flex items-center overflow-hidden">
+
+    <!-- BACKGROUND -->
+    <img src="images/slider-img2.jpg"
+         class="absolute inset-0 w-full h-full object-cover">
+
+    <!-- OVERLAY -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/40"></div>
+
+    <!-- CONTENT -->
+    <div class="relative max-w-7xl mx-auto px-6 w-full">
+
+        <div class="max-w-3xl">
+
+            <h1 data-aos="fade-up"
+                class="text-white text-3xl md:text-4xl font-bold mb-6 leading-tight">
+                News & Events
+            </h1>
+
+            <p data-aos="fade-up" data-aos-delay="150"
+               class="text-gray-200 text-base md:text-lg leading-relaxed">
+                Stay updated with the latest corporate announcements, insurance insights,
+                industry updates, and CIB events across Tanzania and beyond.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="bg-white py-5 py-7">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- TITLE -->
+        <div class="mb-16">
+            <h2 data-aos="fade-up"
+                class="text-3xl md:text-4xl font-bold text-gray-900">
+                Featured News
+            </h2>
+
+            <p data-aos="fade-up" data-aos-delay="100"
+               class="text-gray-500 mt-3">
+                Key updates and announcements from CIB
+            </p>
+        </div>
+
+        <!-- FEATURED GRID -->
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+
+            <!-- IMAGE -->
+            <div data-aos="fade-right" class="overflow-hidden rounded-2xl">
+                <img src="images/marine (2).jpg"
+                     class="w-full h-[420px] object-cover hover:scale-105 transition duration-500">
+            </div>
+
+            <!-- CONTENT -->
+            <div data-aos="fade-left">
+
+                <p class="text-[#f28b19] text-sm font-semibold mb-2">
+                    Corporate Update
+                </p>
+
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                    CIB Expands Insurance Partnerships Across East Africa
+                </h3>
+
+                <p class="text-gray-600 leading-relaxed mb-6">
+                    Corporate Insurance Brokers (CIB) continues to strengthen its regional footprint
+                    by expanding partnerships with leading insurers, enhancing service delivery
+                    and risk management solutions across East Africa.
+                </p>
+
+                <a href="#"
+                   class="text-[#f28b19] font-semibold hover:underline">
+                    Read More →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="bg-gray-50 py-5 py-7">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- TITLE -->
+        <div class=" mb-16">
+            <h2 data-aos="fade-up"
+                class="text-3xl md:text-4xl font-bold text-gray-900">
+                Latest News & Updates
+            </h2>
+        </div>
+
+        <!-- GRID -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+            <!-- CARD -->
+            <div data-aos="fade-up"
+                 class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition overflow-hidden">
+
+                <img src="images/marine.jpg"
+                     class="w-full h-52 object-cover">
+
+                <div class="p-6">
+
+                    <p class="text-[#f28b19] text-sm mb-2">Industry Insight</p>
+
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                        Understanding Modern Risk Management
+                    </h3>
+
+                    <p class="text-gray-500 text-sm mb-4">
+                        Insights into evolving insurance risk trends in Tanzania.
+                    </p>
+
+                    <a href="#" class="text-[#f28b19] text-sm font-semibold hover:underline">
+                        Read More →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD -->
+            <div data-aos="fade-up" data-aos-delay="100"
+                 class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition overflow-hidden">
+
+                <img src="images/heath.jpg"
+                     class="w-full h-52 object-cover">
+
+                <div class="p-6">
+
+                    <p class="text-[#f28b19] text-sm mb-2">Event</p>
+
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                        CIB Hosts Annual Client Engagement Forum
+                    </h3>
+
+                    <p class="text-gray-500 text-sm mb-4">
+                        Strengthening relationships with corporate clients.
+                    </p>
+
+                    <a href="#" class="text-[#f28b19] text-sm font-semibold hover:underline">
+                        Read More →
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- CARD -->
+            <div data-aos="fade-up" data-aos-delay="200"
+                 class="bg-white rounded-2xl shadow-sm hover:shadow-xl transition overflow-hidden">
+
+                <img src="images/slider-img2.jpg"
+                     class="w-full h-52 object-cover">
+
+                <div class="p-6">
+
+                    <p class="text-[#f28b19] text-sm mb-2">Announcement</p>
+
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                        New Digital Insurance Platform Launched
+                    </h3>
+
+                    <p class="text-gray-500 text-sm mb-4">
+                        Improving efficiency and client experience.
+                    </p>
+
+                    <a href="#" class="text-[#f28b19] text-sm font-semibold hover:underline">
+                        Read More →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer class="bg-black text-white pt-16">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <!-- TOP -->
+        <div class="grid md:grid-cols-3 gap-10 pb-12 border-b border-gray-800">
+
+            <!-- COMPANY -->
+            <div data-aos="fade-up">
+                <h2 class="text-lg font-semibold mb-4 tracking-wide text-[#f28b19]">
+                    CIB
+                </h2>
+
+                <p class="text-sm leading-relaxed max-w-sm text-white">
+                    We provide world-class insurance broking and risk management solutions
+                    tailored for individuals, corporates, and institutions across Tanzania.
+                </p>
+
+                <!-- SOCIAL -->
+                <div class="flex gap-4 mt-6">
+
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-700 hover:bg-[#f28b19] hover:text-white transition duration-300">
+                        <i class="fa fa-facebook text-sm"></i>
+                    </a>
+
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-700 hover:bg-[#f28b19] hover:text-white transition duration-300">
+                        <i class="fa fa-twitter text-sm"></i>
+                    </a>
+
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-700 hover:bg-[#f28b19] hover:text-white transition duration-300">
+                        <i class="fa fa-linkedin text-sm"></i>
+                    </a>
+
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-gray-700 hover:bg-[#f28b19] hover:text-white transition duration-300">
+                        <i class="fa fa-instagram text-sm"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h2 class="text-lg font-semibold mb-4 text-[#f28b19]">
+                    QUICK LINKS
+                </h2>
+
+                <ul class="space-y-2 text-sm">
+
+                    <li><a href="index.html" class="hover:text-[#f28b19] transition text-white">Home</a></li>
+                    <li><a href="about.html" class="hover:text-[#f28b19] transition text-white">About Us</a></li>
+                    <li><a href="team.html" class="hover:text-[#f28b19] transition text-white">Our Team</a></li>
+                    <li><a href="careers.html" class="hover:text-[#f28b19] transition text-white">Careers</a></li>
+                    <li><a href="news.html" class="hover:text-[#f28b19] transition text-white">News & Events</a></li>
+                    <li><a href="contact.html" class="hover:text-[#f28b19] transition text-white">Contacts</a></li>
+
+                </ul>
+            </div>
+
+            <!-- CONTACT -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h2 class="text-lg font-semibold mb-4 text-[#f28b19]">
+                    REACH US
+                </h2>
+
+                <div class="space-y-3 text-sm text-white">
+
+                    <p class="flex items-start gap-3">
+                        <i class="fa fa-map-marker mt-1 text-[#f28b19]"></i>
+                        2nd Floor, Golden Heights, Chole Road, Masaki
+                    </p>
+
+                    <p class="flex items-start gap-3">
+                        <i class="fa fa-phone mt-1 text-[#f28b19]"></i>
+                        +255 (22) 260 2508 / 260 2509
+                    </p>
+
+                    <p class="flex items-start gap-3">
+                        <i class="fa fa-mobile mt-1 text-[#f28b19]"></i>
+                        +255 719 844 888
+                    </p>
+
+                    <p class="flex items-start gap-3">
+                        <i class="fa fa-envelope mt-1 text-[#f28b19]"></i>
+                        info@cib.co.tz
+                    </p>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- BOTTOM -->
+        <div class="flex flex-col md:flex-row justify-between items-center py-6 gap-3 text-xs">
+
+            <p class="text-white">
+                © 2026 CIB. All Rights Reserved.
+            </p>
+
+            <div class="flex gap-5">
+                <a href="#" class="hover:text-[#f28b19] transition text-white">Terms</a>
+                <a href="#" class="hover:text-[#f28b19] transition text-white">Privacy</a>
+            </div>
+
+            <p class="text-white">
+                Developed by <span class="text-[#f28b19] font-medium">Beys</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
